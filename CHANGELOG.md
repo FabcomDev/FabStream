@@ -3,6 +3,25 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 1.2.0 – 2026-10-04
+
+### Added
+- **Replay buffer & instant clips:** keeps the last 30 s – 10 min of both formats; **Save clip** (button or Ctrl+Shift+C) writes the moment as MP4 – 16:9 and 9:16 at once, instantly, without re-encoding. Configurable seconds before/after.
+- **Mark moment** (Ctrl+Shift+M) and a session timeline per stream (events and moments as JSONL next to your recordings).
+- **Clip library:** play, show in folder, delete to the recycle bin; Highlight Score per clip.
+- Settings → Replay & Clips; Diagnostics → Features (feature flags) and Advanced diagnostics.
+
+- Settings → Audio → **Desktop audio capture**: Automatic (recommended) / all apps except FabStream / default playback device / legacy.
+
+### Improved
+- Buttons in the Outputs panel no longer miss clicks while live statistics update.
+
+### Fixed
+- **Desktop audio with headsets and when switching the sound output:** desktop audio is now captured by FabStream's own Windows audio helper. It works with devices Chromium could not open (Logitech G HUB 7.1, DualSense …), keeps running when you switch speakers ↔ headset, re-connects after a device is unplugged, and no longer records FabStream's own monitoring sound. The old capture path remains as an automatic fallback and now re-connects after a device switch too.
+
+### Security
+- The app UI can no longer open files directly (folders only); clips open through a checked path.
+
 ## 1.1.0 – 2026-10-04
 
 ### Added
