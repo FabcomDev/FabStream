@@ -11,6 +11,8 @@ Format: Added / Improved / Fixed / Known issues.
 - **Clip library:** play, show in folder, delete to the recycle bin; Highlight Score per clip.
 - Settings → Replay & Clips; Diagnostics → Features (feature flags) and Advanced diagnostics.
 
+- **Application audio:** Audio Mixer → Add Audio → *Application Audio* records a single program – e.g. Discord, Spotify or a game – as its own channel with volume, mute and filters. FabStream lists the programs that are playing sound; programs that are not running yet are picked up automatically when they start (and again after a restart).
+- **Desktop Audio → Leave out application:** keep one program (e.g. Discord) out of the desktop mix – so it is not recorded at all, or only through its own fader. Adding an application channel does this automatically, so nothing is recorded twice.
 - Settings → Audio → **Desktop audio capture**: Automatic (recommended) / all apps except FabStream / default playback device / legacy.
 
 ### Improved
