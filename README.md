@@ -58,6 +58,10 @@
 |---|:---:|:---:|
 | 16:9 + 9:16 at the same time | ✅ | ✅ |
 | Recording (both formats) | ✅ | ✅ |
+| Output resolution | up to 1080p | **up to 4K** |
+| Frame rate | up to 60 fps | **up to 240 fps** |
+| Replay buffer & instant clips | last 2 min | **last 10 min** |
+| Application audio (Discord, Spotify …) | ✅ | ✅ |
 | Filters, hardware encoding, safe zones | ✅ | ✅ |
 | Watermark | **none** | **none** |
 | Platforms per format | 1 | **up to 8** |
@@ -84,7 +88,7 @@ FabStream checks for updates on every start. **Update & restart** downloads the 
 <details>
 <summary><b>Is the free version really free?</b></summary>
 
-Yes. Dual output (16:9 + 9:16 at once), recording and all filters are free, with no watermark and no time limit. Premium only adds streaming each format to several platforms at once.
+Yes. Dual output (16:9 + 9:16 at once) up to 1080p60, recording, replay clips, application audio and all filters are free, with no watermark and no time limit. Premium adds streaming each format to several platforms at once, 1440p/4K, up to 240 fps and a 10-minute replay buffer.
 </details>
 
 <details>
