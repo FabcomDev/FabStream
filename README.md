@@ -1,4 +1,4 @@
-<!-- fabstream-page: managed by tools/release/release-github.mjs (source: github-page/README.md) -->
+<!-- fabstream-page -->
 <p align="center">
   <img src="assets/banner.png" alt="FabStream – 16:9 + 9:16 live at the same time" width="100%">
 </p>
@@ -14,12 +14,15 @@
   <img src="https://img.shields.io/badge/watermark-none-e3b866?style=flat-square&labelColor=14161d" alt="No watermark">
 </p>
 
-<h3 align="center">One PC. Two formats. Every platform.</h3>
+<h3 align="center">One project. Two independently designed outputs. Live and recorded at the same time.</h3>
 
 <p align="center">
-  FabStream streams and records <b>landscape (16:9)</b> for Twitch &amp; YouTube and <b>vertical (9:16)</b> for TikTok, Shorts &amp; Reels <b>at the same time</b>,<br>
-  each with its own layout. No second PC, no cropping hacks, no cloud subscription needed.
+  FabStream is a dual-format broadcast studio: it streams <b>landscape (16:9)</b> to Twitch &amp; YouTube and <b>vertical (9:16)</b> live to TikTok<br>
+  and other RTMP platforms <b>at the same time</b> – while recording ready-to-post 9:16 video for YouTube Shorts and Instagram Reels.<br>
+  Each format has its own layout. No second PC, no cropping hacks, no cloud subscription.
 </p>
+
+<p align="center"><sub>Platform availability and RTMP access (for example a TikTok LIVE stream key) depend on your account and each platform's eligibility requirements.</sub></p>
 
 ---
 
@@ -28,9 +31,9 @@
 | | |
 |---|---|
 | 🖥️📱 **True dual output** | Two independent canvases. Place your camera, chat and overlays differently in 16:9 and 9:16; both go live from one click. |
-| 🎛️ **Built for vertical** | TikTok / Shorts / Reels safe zones, one click to copy a layout from the other format, linked or separate positions per source. |
+| 🎛️ **Built for vertical** | Safe-zone overlays for TikTok, Shorts and Reels, one click to copy a layout from the other format, linked or separate positions per source. |
 | ⚡ **Hardware encoding** | NVIDIA NVENC, AMD AMF and Intel QSV, with automatic x264 fallback. |
-| 📡 **Multistream** *(Premium)* | Send each format to up to 8 platforms at once: Twitch, YouTube, Kick, TikTok, Facebook, custom RTMP… |
+| 📡 **Multistream** *(Premium)* | Send each format to up to 8 RTMP destinations at once: Twitch, YouTube, Kick, TikTok, Facebook, custom RTMP… |
 | 🎬 **Record while live** | Local recording of both formats in parallel to streaming. Ready-made clips for your shorts. |
 | 🎨 **Filters & audio** | GPU video filters (chroma key, color, blur, crop…), mic + desktop audio, audio filters, mixer. |
 | 🔁 **Auto-reconnect** | Dropped connection? FabStream reconnects each destination on its own. |
@@ -71,7 +74,7 @@ Try Premium **7 days for free** inside the app (no credit card). Premium is purc
    <sub>FabStream is new and not yet known to SmartScreen; this message disappears as more people use it.</sub>
 3. The setup assistant detects your GPU, picks the best encoder and helps you add your first platform.
 
-FabStream checks for updates on start and tells you when a new version is available.
+FabStream checks for updates on every start. **Update & restart** downloads the new version, verifies its signature and checksum and installs it – your scenes and settings are kept.
 
 **Requirements:** Windows 10 or 11 (64-bit) · 8 GB RAM · a GPU with H.264 encoding recommended · for multistream: enough upload bandwidth for every destination (≈ 6 Mbit/s each at 1080p).
 
@@ -84,9 +87,9 @@ Yes. Dual output (16:9 + 9:16 at once), recording and all filters are free, with
 </details>
 
 <details>
-<summary><b>Does it replace OBS / Streamlabs?</b></summary>
+<summary><b>Can FabStream replace OBS or Streamlabs?</b></summary>
 
-For most streamers, yes: scenes, sources, filters, audio mixer, recording and streaming. The difference: FabStream is built around running a landscape and a vertical stream at the same time.
+If your focus is straightforward streaming and recording – and especially simultaneous landscape + vertical production – it can. Advanced OBS workflows (plugins, browser sources, scripting, studio mode, virtual camera, replay buffer) may still require OBS.
 </details>
 
 <details>
@@ -100,6 +103,20 @@ In FabStream: <b>Settings → Account → License key</b>. Lost it? Use "Lost yo
 
 Stream keys never leave your PC except to the platform you stream to. They are stored encrypted with Windows DPAPI.
 </details>
+
+## 🔐 Verify your download
+
+Every release lists the **SHA-256** checksum of `FabStream-Setup.exe` in its release notes and in `SHA256SUMS.txt` (signed: `SHA256SUMS.txt.sig`, see [SECURITY.md](SECURITY.md)). To check the file you downloaded, open PowerShell in your Downloads folder:
+
+```powershell
+Get-FileHash .\FabStream-Setup.exe -Algorithm SHA256
+```
+
+The hash must match the one in the [release notes](https://github.com/FabcomDev/FabStream/releases/latest).
+
+## 📄 Documents
+
+[Changelog](CHANGELOG.md) · [Security](SECURITY.md) · [Privacy policy](PRIVACY.md) · [End-user license (EULA)](EULA.md) · [Third-party licenses](THIRD_PARTY_NOTICES.md)
 
 ## 💬 Support
 
