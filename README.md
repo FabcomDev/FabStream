@@ -34,6 +34,7 @@
 | 🎛️ **Built for vertical** | Safe-zone overlays for TikTok, Shorts and Reels, one click to copy a layout from the other format, linked or separate positions per source. |
 | ⚡ **Hardware encoding** | NVIDIA NVENC, AMD AMF and Intel QSV, with automatic x264 fallback. |
 | 📡 **Multistream** *(Premium)* | Send each format to up to 8 RTMP destinations at once: Twitch, YouTube, Kick, TikTok, Facebook, custom RTMP… |
+| ⏪ **Replay buffer & instant clips** | Keeps the last minutes of both formats. One click (or hotkey) saves the moment as 16:9 **and** 9:16 MP4 – instantly, no re-encoding. |
 | 🎬 **Record while live** | Local recording of both formats in parallel to streaming. Ready-made clips for your shorts. |
 | 🎨 **Filters & audio** | GPU video filters (chroma key, color, blur, crop…), mic + desktop audio, audio filters, mixer. |
 | 🔁 **Auto-reconnect** | Dropped connection? FabStream reconnects each destination on its own. |
