@@ -4,7 +4,7 @@ Lizenzgeber / Licensor: **Fabcom**, Inhaber Fabrizio Grande, Schweiz – f.grand
 Vollständige, aktuelle Fassung / full current version: https://fabstream.fabcom-dev.com/eula.html (AGB: /terms.html)
 
 ## Deutsch (verbindlich)
-1. **Lizenz.** Du darfst FabStream auf eigenen oder von dir kontrollierten Computern installieren und privat wie kommerziell nutzen. Premium-Funktionen (Multistream) erfordern ein aktives Abo oder einen gültigen Lizenzschlüssel; ein Schlüssel darf auf bis zu 3 PCs gleichzeitig aktiviert sein.
+1. **Lizenz.** Du darfst FabStream auf eigenen oder von dir kontrollierten Computern installieren und privat wie kommerziell nutzen. Premium-Funktionen (Multistream, 1440p/4K, über 60 fps, Replay-Buffer über 2 Minuten) erfordern ein aktives Abo oder einen gültigen Lizenzschlüssel; ein Schlüssel darf auf bis zu 3 PCs gleichzeitig aktiviert sein.
 2. **Einschränkungen.** Weiterverkauf, Vermietung, Unterlizenzierung, das Umgehen der Lizenzprüfung und Dekompilierung (soweit nicht gesetzlich erlaubt) sind untersagt.
 3. **Drittkomponenten.** FabStream enthält Software Dritter unter eigenen Lizenzen (THIRD_PARTY_NOTICES.md), insbesondere FFmpeg (GPL v3) als separates Programm. Deine Rechte aus diesen Lizenzen bleiben unberührt.
 4. **Abonnements.** Verkauf und Abrechnung über unseren Wiederverkäufer (Lemon Squeezy bzw. Paddle) oder Stripe. Kündigung jederzeit zum Ende der Laufzeit; danach gilt wieder der Free-Plan. Gesetzliche Widerrufsrechte bleiben unberührt (Details in den AGB).
