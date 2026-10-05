@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://github.com/FabcomDev/FabStream/releases/latest/download/FabStream-Setup.exe"><img src="https://img.shields.io/badge/Download-Windows%2010%2F11-e3b866?style=for-the-badge&logo=windows&logoColor=0b0c10&labelColor=f3d79a" alt="Download for Windows"></a>
-  <a href="https://fabstream.fabcom.workers.dev"><img src="https://img.shields.io/badge/Website-Premium%20%26%20Account-14161d?style=for-the-badge&labelColor=14161d&color=2a2d38" alt="Website"></a>
+  <a href="https://fabstream.fabcom-dev.workers.dev"><img src="https://img.shields.io/badge/Website-Premium%20%26%20Account-14161d?style=for-the-badge&labelColor=14161d&color=2a2d38" alt="Website"></a>
 </p>
 
 <p align="center">
@@ -148,7 +148,7 @@ Compositing both canvases took about 0.2 ms per frame. Results on other hardware
 | Priority support | – | ✅ |
 | Price | **0 €** | **6.99 € / month** or **59 € / year** |
 
-Try Premium **7 days for free** inside the app (no credit card). Premium is purchased on the [FabStream website](https://fabstream.fabcom.workers.dev); your license key arrives by e-mail.
+Try Premium **7 days for free** inside the app (no credit card). Premium is purchased on the [FabStream website](https://fabstream.fabcom-dev.workers.dev); your license key arrives by e-mail.
 
 ## ⬇️ Install
 
@@ -195,7 +195,7 @@ Yes. Audio Mixer → Add Audio → <b>Application Audio</b> records one program 
 <details>
 <summary><b>Where do I enter my license key?</b></summary>
 
-In FabStream: <b>Settings → Account → License key</b>. Lost it? Use "Lost your key?" in the same place, or the account page on the <a href="https://fabstream.fabcom.workers.dev">website</a>; it is sent to your purchase e-mail.
+In FabStream: <b>Settings → Account → License key</b>. Lost it? Use "Lost your key?" in the same place, or the account page on the <a href="https://fabstream.fabcom-dev.workers.dev">website</a>; it is sent to your purchase e-mail.
 </details>
 
 <details>
@@ -242,12 +242,12 @@ FabStream ist ein Streaming-Studio für Windows, das **16:9 und 9:16 gleichzeiti
 - **Installation:** [`FabStream-Setup.exe` herunterladen](https://github.com/FabcomDev/FabStream/releases/latest/download/FabStream-Setup.exe) und starten. Zeigt Windows SmartScreen *„Der Computer wurde durch Windows geschützt"*: **Weitere Informationen → Trotzdem ausführen**.
 - **Tastatur:** Esc = zurück, Enter = bestätigen, Entf löscht die gewählte Szene oder Quelle, **F1** zeigt alle Kürzel.
 
-Premium, Konto und Lizenzschlüssel: [Website](https://fabstream.fabcom.workers.dev) (auch auf Deutsch).
+Premium, Konto und Lizenzschlüssel: [Website](https://fabstream.fabcom-dev.workers.dev) (auch auf Deutsch).
 </details>
 
 ## 💬 Support
 
-Bugs, ideas and questions: open an [issue](https://github.com/FabcomDev/FabStream/issues). Premium and license questions: [website](https://fabstream.fabcom.workers.dev).
+Bugs, ideas and questions: open an [issue](https://github.com/FabcomDev/FabStream/issues). Premium and license questions: [website](https://fabstream.fabcom-dev.workers.dev).
 
 ---
 
