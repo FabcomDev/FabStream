@@ -3,6 +3,11 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 1.3.2 – 2026-10-05
+
+### Fixed
+- **Website address:** the website, your account and license checks now run on https://fabstream.fabcom-dev.workers.dev (1.3.1 pointed to an address that is not in use). Please update.
+
 ## 1.3.1 – 2026-10-05
 
 ### Fixed
