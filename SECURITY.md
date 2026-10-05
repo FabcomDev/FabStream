@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-Please report security problems privately to **f.grande@bluewin.ch** (subject "FabStream security") instead of opening a public issue. You will get an answer within a few days. Please include the FabStream version (Settings → Diagnostics) and steps to reproduce.
+Please report security problems privately to **support@fabcomstudios.com** (subject "FabStream security") instead of opening a public issue. You will get an answer within a few days. Please include the FabStream version (Settings → Diagnostics) and steps to reproduce.
 
 ## How FabStream protects you
 
