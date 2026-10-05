@@ -5,13 +5,13 @@
 
 <p align="center">
   <a href="https://github.com/FabcomDev/FabStream/releases/latest/download/FabStream-Setup.exe"><img src="https://img.shields.io/badge/Download-Windows%2010%2F11-e3b866?style=for-the-badge&logo=windows&logoColor=0b0c10&labelColor=f3d79a" alt="Download for Windows"></a>
-  <a href="https://fabstream.fabcom-dev.workers.dev"><img src="https://img.shields.io/badge/Website-Premium%20%26%20Account-14161d?style=for-the-badge&labelColor=14161d&color=2a2d38" alt="Website"></a>
+  <a href="https://fabstream.fabcomstudios.com"><img src="https://img.shields.io/badge/Website-Plans%20%26%20Account-14161d?style=for-the-badge&labelColor=14161d&color=2a2d38" alt="Website"></a>
 </p>
 
 <p align="center">
   <a href="https://github.com/FabcomDev/FabStream/releases/latest"><img src="https://img.shields.io/github/v/release/FabcomDev/FabStream?style=flat-square&color=e3b866&labelColor=14161d&label=version" alt="Latest version"></a>
   <a href="https://github.com/FabcomDev/FabStream/releases"><img src="https://img.shields.io/github/downloads/FabcomDev/FabStream/total?style=flat-square&color=e3b866&labelColor=14161d" alt="Downloads"></a>
-  <img src="https://img.shields.io/badge/price-free%20%2B%20Premium-e3b866?style=flat-square&labelColor=14161d" alt="Free + Premium">
+  <img src="https://img.shields.io/badge/price-free%20%2B%20from%20%244.99-e3b866?style=flat-square&labelColor=14161d" alt="Free, paid plans from $4.99">
   <img src="https://img.shields.io/badge/watermark-none-e3b866?style=flat-square&labelColor=14161d" alt="No watermark">
   <img src="https://img.shields.io/badge/output-up%20to%204K%20%C2%B7%20240%20fps-e3b866?style=flat-square&labelColor=14161d" alt="Up to 4K and 240 fps">
 </p>
@@ -30,7 +30,7 @@
   <a href="#-how-it-works">How it works</a> ·
   <a href="#-platforms">Platforms</a> ·
   <a href="#-performance">Performance</a> ·
-  <a href="#-free-vs-premium">Free vs. Premium</a> ·
+  <a href="#-plans">Plans</a> ·
   <a href="#%EF%B8%8F-install">Install</a> ·
   <a href="#-faq">FAQ</a> ·
   <a href="#-deutsch">Deutsch</a> ·
@@ -57,7 +57,7 @@ All changes: [Changelog](CHANGELOG.md).
 | 🖥️📱 **True dual output** | Two independent canvases. Place your camera, chat and overlays differently in 16:9 and 9:16; both go live with one click. |
 | 🎛️ **Built for vertical** | Safe-zone overlays for TikTok, Shorts and Reels, copy a layout from the other format in one click, linked or separate positions per source. |
 | ⚡ **One encoder per format** | Streaming, recording and the replay buffer of a format share one hardware encoder (NVIDIA NVENC, AMD AMF, Intel QSV, automatic x264 fallback). Everything in both formats needs just **2 encoder sessions**. |
-| 📡 **Multistream** *(Premium)* | Send each format to up to 8 RTMP destinations at once: Twitch, YouTube, Kick, TikTok, Facebook, custom RTMP… If one platform drops, only that destination reconnects – the others keep running. |
+| 📡 **Multistream** *(Premium+)* | Send each format to up to 3 (Premium) or 8 (Ultra, Max) RTMP destinations at once: Twitch, YouTube, Kick, TikTok, Facebook, custom RTMP… If one platform drops, only that destination reconnects – the others keep running. |
 | ⏪ **Replay buffer & instant clips** | Keeps the last minutes of both formats. One click (or hotkey) saves the moment as 16:9 **and** 9:16 MP4 – instantly, no re-encoding. |
 | ✨ **Auto Moments** *(preview)* | A loud reaction on your mic or a big moment in the game sound becomes a "Save clip" suggestion (or is saved automatically). Only audio levels are analysed – nothing leaves your PC. |
 | 🎧 **Application audio** | Record Discord, Spotify or a game as its own mixer channel with volume, mute and filters – or leave a program out of the desktop audio entirely. |
@@ -130,25 +130,24 @@ Measured with FabStream's built-in benchmark on a Ryzen 7 7800X3D + GeForce RTX 
 
 Compositing both canvases took about 0.2 ms per frame. Results on other hardware differ; the Outputs panel shows encoder speed and dropped frames live while you stream.
 
-## 💎 Free vs. Premium
+## 💎 Plans
 
-| | **Free** | **Premium** |
-|---|:---:|:---:|
-| 16:9 + 9:16 at the same time | ✅ | ✅ |
-| Recording (both formats) | ✅ | ✅ |
-| Output resolution | up to 1080p | **up to 4K** |
-| Frame rate | up to 60 fps | **up to 240 fps** |
-| Replay buffer & instant clips | last 2 min | **last 10 min** |
-| Application audio (Discord, Spotify …) | ✅ | ✅ |
-| Filters, hardware encoding, safe zones | ✅ | ✅ |
-| Watermark | **none** | **none** |
-| Platforms per format | 1 | **up to 8** |
-| Platforms in total | 2 | **16** |
-| PCs per license | 1 | **3** |
-| Priority support | – | ✅ |
-| Price | **0 €** | **6.99 € / month** or **59 € / year** |
+| | **Free** | **Premium** | **Ultra** | **Max** |
+|---|:---:|:---:|:---:|:---:|
+| 16:9 + 9:16 at the same time | ✅ | ✅ | ✅ | ✅ |
+| Platforms per format (multistream) | 1 | 3 | **8** | **8** |
+| Output resolution | 1080p | 1440p | **4K** | **4K** |
+| Frame rate | 60 fps | 120 fps | **240 fps** | **240 fps** |
+| Replay buffer & instant clips | 2 min | 5 min | 10 min | **30 min** |
+| Recording, application audio, filters, hardware encoding | ✅ | ✅ | ✅ | ✅ |
+| Watermark / time limit | **none** | **none** | **none** | **none** |
+| PCs per license | – | 1 | 3 | **5** |
+| Early access to preview features (Auto Moments …) | – | – | – | ✅ |
+| Support | community | e-mail | e-mail | **priority** |
+| Price per month | **$0** | **$4.99** | **$9.99** | **$19.99** |
+| Price per year (2 months free) | – | $49 | $99 | $199 |
 
-Try Premium **7 days for free** inside the app (no credit card). Premium is purchased on the [FabStream website](https://fabstream.fabcom-dev.workers.dev); your license key arrives by e-mail.
+Try **every feature 7 days for free** inside the app (no credit card). Plans are purchased on the [FabStream website](https://fabstream.fabcomstudios.com); your license key arrives by e-mail.
 
 ## ⬇️ Install
 
@@ -171,7 +170,7 @@ FabStream checks for updates on every start. **Update & restart** downloads the 
 <details>
 <summary><b>Is the free version really free?</b></summary>
 
-Yes. Dual output (16:9 + 9:16 at once) up to 1080p60, recording, replay clips, application audio and all filters are free, with no watermark and no time limit. Premium adds streaming each format to several platforms at once, 1440p/4K, up to 240 fps and a 10-minute replay buffer.
+Yes. Dual output (16:9 + 9:16 at once) up to 1080p60, recording, replay clips, application audio and all filters are free, with no watermark and no time limit. Premium, Ultra and Max add multistream (3 or 8 platforms per format), 1440p or 4K, up to 120 or 240 fps, longer replay buffers and more PCs.
 </details>
 
 <details>
@@ -195,7 +194,7 @@ Yes. Audio Mixer → Add Audio → <b>Application Audio</b> records one program 
 <details>
 <summary><b>Where do I enter my license key?</b></summary>
 
-In FabStream: <b>Settings → Account → License key</b>. Lost it? Use "Lost your key?" in the same place, or the account page on the <a href="https://fabstream.fabcom-dev.workers.dev">website</a>; it is sent to your purchase e-mail.
+In FabStream: <b>Settings → Account → License key</b>. Lost it? Use "Lost your key?" in the same place, or the account page on the <a href="https://fabstream.fabcomstudios.com">website</a>; it is sent to your purchase e-mail.
 </details>
 
 <details>
@@ -238,16 +237,19 @@ The hash must match the one in the [release notes](https://github.com/FabcomDev/
 FabStream ist ein Streaming-Studio für Windows, das **16:9 und 9:16 gleichzeitig** live sendet und aufnimmt – z. B. querformatig auf Twitch/YouTube und hochformatig auf TikTok LIVE, mit eigenem Layout pro Format.
 
 - **Kostenlos:** beide Formate gleichzeitig bis 1080p60, Aufnahme, Replay-Clips (2 Minuten), Anwendungs-Audio (z. B. Discord separat), alle Filter – **ohne Wasserzeichen, ohne Zeitlimit**.
-- **Premium (6,99 € / Monat oder 59 € / Jahr):** Multistream auf bis zu 8 Plattformen pro Format, bis 4K und 240 fps, 10 Minuten Replay-Puffer, 3 PCs pro Lizenz. 7 Tage gratis testen, ohne Kreditkarte.
+- **Premium (4,99 € / Monat oder 49 € / Jahr):** 3 Plattformen pro Format, bis 1440p und 120 fps, 5 Minuten Replay-Puffer, 1 PC.
+- **Ultra (9,99 € / Monat oder 99 € / Jahr):** 8 Plattformen pro Format, bis 4K und 240 fps, 10 Minuten Replay-Puffer, 3 PCs.
+- **Max (19,99 € / Monat oder 199 € / Jahr):** alles aus Ultra, 30 Minuten Replay-Puffer, 5 PCs, früher Zugang zu neuen Funktionen und bevorzugter Support.
+- Alle Funktionen 7 Tage gratis testen, ohne Kreditkarte.
 - **Installation:** [`FabStream-Setup.exe` herunterladen](https://github.com/FabcomDev/FabStream/releases/latest/download/FabStream-Setup.exe) und starten. Zeigt Windows SmartScreen *„Der Computer wurde durch Windows geschützt"*: **Weitere Informationen → Trotzdem ausführen**.
 - **Tastatur:** Esc = zurück, Enter = bestätigen, Entf löscht die gewählte Szene oder Quelle, **F1** zeigt alle Kürzel.
 
-Premium, Konto und Lizenzschlüssel: [Website](https://fabstream.fabcom-dev.workers.dev) (auch auf Deutsch).
+Pläne, Konto und Lizenzschlüssel: [Website](https://fabstream.fabcomstudios.com) (auch auf Deutsch).
 </details>
 
 ## 💬 Support
 
-Bugs, ideas and questions: open an [issue](https://github.com/FabcomDev/FabStream/issues). Premium and license questions: [website](https://fabstream.fabcom-dev.workers.dev).
+Bugs, ideas and questions: open an [issue](https://github.com/FabcomDev/FabStream/issues). Plan and license questions: [website](https://fabstream.fabcomstudios.com).
 
 ---
 
