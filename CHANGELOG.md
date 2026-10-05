@@ -3,6 +3,21 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 1.3.1 – 2026-10-05
+
+### Fixed
+- **New website address:** FabStream now uses https://fabstream.fabcom.workers.dev for Premium, your account and license checks. Please update – version 1.3.0 still points to the old address.
+- **Recordings and clips are never overwritten:** two recordings or clips started in the same second get separate files (`_2`, `_3` …).
+- **Update download:** a full disk, missing write access or a dropped connection now ends the download at once with a clear message (before, it could hang).
+- **Long replay sessions:** the replay buffer's segment list stays small however long you stream, and segments a clip is being cut from are kept until the clip is done.
+- **Security:** FabStream only loads image and video files you chose yourself (network shares only when picked explicitly).
+- **License server:** a PC limit can no longer be exceeded by activating several PCs at the same moment; late or repeated payment notifications can no longer switch a subscription back to an older state; only FabStream purchases (in the right test/live mode) create license keys; a license e-mail that could not be sent is sent again automatically; checkout attempts are rate limited.
+
+### Improved
+- **Website:** English by default, German for visitors from Germany, Austria, Switzerland and Liechtenstein; the EN/DE switch remembers your choice.
+- **GitHub page:** what's new, supported platforms, keyboard shortcuts, more FAQ and a German summary.
+- **Builds:** every release is compiled fresh from the source, runs the app and license-server tests and the self-test, and uses a locked FFmpeg build; each package records exactly what it contains (`build-info.json`).
+
 ## 1.3.0 – 2026-10-05
 
 ### Added
