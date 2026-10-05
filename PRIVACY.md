@@ -6,8 +6,10 @@ Vollständige Erklärung / full policy: https://fabstream.fabcomstudios.com/priv
 - **Lokal:** Szenen, Einstellungen, Aufnahmen und Logs bleiben auf deinem PC (`%APPDATA%\FabStream`). Keine Telemetrie, kein Tracking.
 - **Streaming:** Bild und Ton gehen nur an die Server, die du einträgst. Stream-Keys sind mit Windows DPAPI verschlüsselt.
 - **Lizenzprüfung (nur Premium-Abo):** Lizenzschlüssel, zufällige Installations-ID, Computername und App-Version gehen beim Aktivieren und ca. alle 12 Stunden an den FabStream-Lizenzserver (Cloudflare).
-- **Update-Prüfung:** Die App fragt beim Start die aktuelle Versionsnummer ab (IP-Adresse wird technisch übertragen).
+- **Update-Prüfung:** Die App fragt beim Start die aktuelle Versionsnummer ab (IP-Adresse wird technisch übertragen); abschaltbar unter Einstellungen → Erweitert.
+- **FabStream-Konto (freiwillig):** Anmeldung per E-Mail-Code oder mit Twitch, Steam, TikTok, Discord, Google. Gespeichert: E-Mail (falls bestätigt), Anzeigename, Anbieter-Konto-ID, angemeldete Geräte; bei „Twitch für Streaming verbinden“ verschlüsselt die Twitch-Berechtigung. Cloud-Sync speichert Szenen und Einstellungen – nie Stream-Keys. Konto jederzeit löschbar (Einstellungen → Konto).
+- **Fehlerberichte (freiwillig):** Text, Antwort-Adresse und nur die gewählten Anhänge (Log-Auszug ohne Keys/Tokens, Systemübersicht, Screenshot) gehen per E-Mail an den Support.
 - **Zahlung:** über unseren Wiederverkäufer (Lemon Squeezy bzw. Paddle) oder Stripe; Zahlungsdaten erhalten wir nie. **E-Mail:** Resend (Versand des Lizenzschlüssels).
 - **Rechte:** Auskunft, Berichtigung, Löschung usw. an support@fabcomstudios.com.
 
-English: FabStream keeps your data on your PC, has no telemetry, and only contacts the license server (Premium subscriptions) and the update check. Payments by our reseller (Lemon Squeezy/Paddle) or Stripe, license e-mails by Resend. Full policy at the URL above.
+English: FabStream keeps your data on your PC, has no telemetry, and only contacts the license server (subscriptions, optional account, cloud sync), the update check and – when you send one – the bug-report service. Payments by our reseller (Lemon Squeezy/Paddle) or Stripe, license e-mails by Resend. Full policy at the URL above.
