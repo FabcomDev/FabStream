@@ -3,17 +3,12 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
-## 1.11.0 – 2026-10-06
+## 1.12.0 – 2026-10-06
 
 ### Added
-- **Browser Source – alerts, chat boxes, goal bars and any web overlay.** *Add Source → Browser Source*, paste the widget link (Streamlabs: Dashboard → Alert Box → *Widget URL*; StreamElements: your overlay link) – done. The page is shown with a transparent background and can be placed differently in 16:9 and 9:16 like every other source. Properties: address, size (with presets, also 1080×1920), frame rate, custom CSS, *Reload page*, and *Play the page's sound* so alert sounds reach the stream through desktop audio.
-- **Efficient and safe:** every page runs in its own hidden, sandboxed browser without access to FabStream or your files. Only the parts of the page that change are transferred, so an alert box costs almost nothing between alerts. Pages cannot download files, open windows, use your camera or microphone, or navigate to local files. Widget links contain private tokens – FabStream never writes them into its logs.
-- **Audio monitoring:** mixer ⋮ → *Monitoring* – *Monitor and output* (hear a source on your headphones while it streams) or *Monitor only* (hear it, but keep it out of the stream and the recording – e.g. a music cue or a co-host check). A green tag in the mixer shows it; one click turns it off. Choose the device under *Settings → Audio → Monitoring device*; if it is unplugged, FabStream falls back to the default output.
-- Self-test: new checks "browser source renders" (transparent around the page content) and "canvas stays capturable with a browser source".
 - **Buy or upgrade a plan directly from the app:** *Upgrade* now has a monthly/yearly switch and one button per plan. The payment page opens straight away (no detour over the pricing page) with your e-mail already filled in; the purchase is bound to your FabStream account. While you pay, the dialog shows "Waiting for your purchase…" and the plan switches on by itself the moment the payment arrives – no license key to copy. Not signed in yet? You sign in once first (e-mail code, Twitch, Kick, …). *Buy without an account* still exists.
 
 ### Improved
-- Long text inputs (e.g. widget links) are no longer cut off at 80 characters.
 - **Profile button moved to the bottom left** (under the sources); its panel opens above it.
 - **Filters dialog:** wider, filter names no longer wrap or overlap – the voice preset ("Cinematic Podcast") is shown small above the filter name, the move/remove buttons appear on hover and on the selected filter, the header buttons stay on one line and the level meter uses the full width.
 - Upgrade dialog: the price row of the plan table follows the monthly/yearly switch.
@@ -23,6 +18,17 @@ Format: Added / Improved / Fixed / Known issues.
 - **Recordings now play in Windows Media Player** (and other strict players). MP4 recordings were missing the audio configuration ("Das Audio … ist im Format mp4a codiert" / black video at 00:00). FFmpeg, VLC and browsers played them, Windows Media Player refused. New recordings contain it; already recorded files keep the problem – open them with VLC or record them again.
 - **Clips always have a picture:** a clip that started between two keyframes could be saved without video (only sound). Clips now start at the keyframe right before the moment (up to 2 s more lead-in).
 - **Kick: the stream now arrives on the channel after *Fetch key*.** Kick hands out its ingest server without the RTMP application part (`/app`); FFmpeg then sent the stream to the wrong place and Kick dropped it. FabStream adds `/app` for Kick's (and Twitch's) Amazon IVS servers – also for destinations saved earlier.
+
+## 1.11.0 – 2026-10-06
+
+### Added
+- **Browser Source – alerts, chat boxes, goal bars and any web overlay.** *Add Source → Browser Source*, paste the widget link (Streamlabs: Dashboard → Alert Box → *Widget URL*; StreamElements: your overlay link) – done. The page is shown with a transparent background and can be placed differently in 16:9 and 9:16 like every other source. Properties: address, size (with presets, also 1080×1920), frame rate, custom CSS, *Reload page*, and *Play the page's sound* so alert sounds reach the stream through desktop audio.
+- **Efficient and safe:** every page runs in its own hidden, sandboxed browser without access to FabStream or your files. Only the parts of the page that change are transferred, so an alert box costs almost nothing between alerts. Pages cannot download files, open windows, use your camera or microphone, or navigate to local files. Widget links contain private tokens – FabStream never writes them into its logs.
+- **Audio monitoring:** mixer ⋮ → *Monitoring* – *Monitor and output* (hear a source on your headphones while it streams) or *Monitor only* (hear it, but keep it out of the stream and the recording – e.g. a music cue or a co-host check). A green tag in the mixer shows it; one click turns it off. Choose the device under *Settings → Audio → Monitoring device*; if it is unplugged, FabStream falls back to the default output.
+- Self-test: new checks "browser source renders" (transparent around the page content) and "canvas stays capturable with a browser source".
+
+### Improved
+- Long text inputs (e.g. widget links) are no longer cut off at 80 characters.
 
 ## 1.10.0 – 2026-10-06
 
