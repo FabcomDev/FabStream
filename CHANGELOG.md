@@ -3,10 +3,50 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
-## 1.7.0 – 2026-10-05
+## 1.8.0 – 2026-10-05
+
+### Added
+- **Website in Italian:** the FabStream pages (home, download, account, contact, checkout, thank-you page) are now also available in Italian at /it/. Visitors from Italy, San Marino and the Vatican – and visitors with an Italian browser in Switzerland, Germany, Austria and Liechtenstein – get Italian automatically; the language switch now offers EN / DE / IT. Legal texts stay in English and German (the German version is binding); Italian pages link to the English ones and say so.
+- **Website: “Measured vs. Beta”:** a new section shows what has been measured (both formats at 1080p60, 0 dropped frames) and what is still being tested, with an invitation to become a tester.
 
 ### Improved
-- 
+- **Website: honest performance claims.** Values without a published measurement are marked **Beta**: output above 1080p60 (1440p / 120 fps, 4K / 240 fps), more than 3 platforms per format, entry-level hardware (GTX 1650 class) with a game running and 60-minute sessions. Plan limits are now described as the highest *settings* a plan unlocks, not as a performance promise; the FAQ, download page and terms say so too.
+- Website: tips for entry-level GPUs (start with 16:9 at 1080p60 and 9:16 at 720p or 30 fps).
+
+### Fixed
+- **Recording and streaming work again with image and video sources.** In 1.7.0 an image or video file in the scene made both buttons fail with "MediaRecorder: SecurityError … Canvas is not origin-clean" (followed by "FFmpeg stopped unexpectedly"). Files are now loaded with permission for the program canvas; as a safety net, a source that would still block capture is skipped (and logged) instead of breaking the output, and Record / Go Live check the canvas before starting an encoder and show one clear message.
+- Self-test: new check "image source keeps recording possible" (an image file in the scene, both canvases must stay capturable).
+
+## 1.7.1 – 2026-10-05
+
+### Added
+- **Voice presets with voice analysis:** mixer ⋮ → *Voice presets…* gives your microphone a complete studio chain in one click – **Cinematic Podcast**, Broadcast Radio, Clear Streamer, Gaming – Noisy Room, Warm & Intimate, Natural. *Analyse my voice* listens to 3 seconds of silence and you reading a sentence, then tunes level, noise gate, room echo reduction, EQ, de-esser, compressor and limiter to your voice, microphone and room (and tells you what it found, e.g. clipping, background noise or an echoing room). Tick *I use speakers* to cancel the speaker echo.
+- New audio filters: **Voice EQ** (5-band parametric), **De-Esser**, **Room Echo Reduction** and **Warmth** (saturation).
+
+### Improved
+- **Back to FabStream after signing in:** when the browser shows "You are signed in" / "Your account is linked", it switches back to FabStream after 5 seconds (or at once with "Switch to FabStream now"; "Stay here" stops it) and closes the tab when you switch – where the browser allows a page to close its own tab, otherwise it says the tab can be closed.
+
+### Security
+- **Hardened FabStream.exe:** Electron fuses switched off (RunAsNode, NODE_OPTIONS, --inspect), so the signed app cannot be misused to run other code.
+- **Saved keys are never lost by accident:** a locked or damaged key store is no longer overwritten (damaged files are kept as `secrets.json.corrupt-…`); the PC id used for licenses is only created anew when it is really missing.
+- **Backups and cloud sync are safer:** network paths (`\\server\…`) in imported scenes are ignored, and when an imported destination points to a different server its saved stream key is deleted instead of being sent there.
+- **A stream key pasted into the server URL** is detected (Twitch, Kick, YouTube, Facebook, TikTok, Trovo), moved to the key field and never stored in the settings file.
+- **Licenses:** setting the system clock back no longer extends a subscription or the trial; offline keys with an invalid end date are refused; the update installer is checked again right before it starts.
+- A second start of FabStream never closes an instance that is streaming or recording.
+
+### Fixed
+- Imported projects with odd values (e.g. huge text sizes or crafted names) can no longer crash FabStream; values are limited to what the editor allows.
+- The hotkey recorder in Settings no longer keeps blocking the keyboard after switching tabs or closing the dialog.
+- Stopping the replay buffer while a clip is being saved no longer breaks the clip.
+- Two outputs started at the same moment can no longer bypass the plan limit or orphan an encoder.
+- Clip library: files that disappear while listing no longer cause an error; a relative recording folder falls back to the default folder.
+
+## 1.7.0 – 2026-10-05
+
+First published version with everything listed under 1.6.0 (1.6.0 itself was not released).
+
+### Improved
+- Release build: packaging retries while Windows still holds the freshly tested FabStream.exe (no more "file in use" after the self-test).
 
 ## 1.6.0 – 2026-10-05
 
