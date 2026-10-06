@@ -3,6 +3,24 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 1.13.0 – 2026-10-06
+
+### Added
+- **Chat & activity panel:** your Twitch and Kick chat right in FabStream (right column, under the source properties) – no sign-in needed, just enter your channel. Subs, gifts, raids and bits are highlighted and have their own *Activity* tab. Kick chat is in Beta.
+- **Chat overlay for 16:9 or 9:16:** one click in the chat panel adds a transparent chat box to the canvas you choose (as a Browser Source) – move and resize it like any source.
+- **YouTube:** connect YouTube (Settings → Stream) to fill in your stream key, change the title and category of your broadcast and open your YouTube live chat in its own window.
+- **Upload clips to YouTube Shorts or TikTok:** clip library → *Upload*. Vertical clips up to 3 minutes become Shorts (title, description, visibility); TikTok clips go to your TikTok drafts, where you add caption and sound in the app. The file goes straight from your PC to the platform, with progress and Cancel. YouTube allows only a limited number of uploads per day for all FabStream users together while FabStream is new – if the limit is reached, try again the next day.
+- **Crop with the mouse:** hold *Alt* and drag a handle of a source to crop it (the picture keeps its size); dragging back out uncrops. Works on rotated and flipped sources.
+- **Rotated sources keep their handles:** resize a rotated source along its own edges – the opposite corner stays in place.
+
+### Improved
+- Snapping while resizing is now switched off with *Ctrl* (*Alt* + handle crops); while moving, *Alt* or *Ctrl* place freely.
+
+### Known issues
+- **YouTube and TikTok connections need the platforms' approval of FabStream.** Until Google and TikTok have reviewed FabStream, *Connect YouTube* / *Connect TikTok* may show an error for most accounts.
+- Kick chat uses Kick's own chat connection and may stop working when Kick changes it (Beta).
+- Twitch follows are not shown in the activity list (Twitch only shares them with a signed-in connection).
+
 ## 1.12.0 – 2026-10-06
 
 ### Added
@@ -12,6 +30,7 @@ Format: Added / Improved / Fixed / Known issues.
 - **Profile button moved to the bottom left** (under the sources); its panel opens above it.
 - **Filters dialog:** wider, filter names no longer wrap or overlap – the voice preset ("Cinematic Podcast") is shown small above the filter name, the move/remove buttons appear on hover and on the selected filter, the header buttons stay on one line and the level meter uses the full width.
 - Upgrade dialog: the price row of the plan table follows the monthly/yearly switch.
+- Website: the feature overview shows Browser source & alerts, Voice presets, Transitions & studio mode, Add platforms while live and audio monitoring (EN/DE/IT).
 - Website: anonymous visitor statistics with Cloudflare Web Analytics – no cookies, no user profiles, no cookie banner needed. The privacy policy (EN/DE) and the privacy statements on fabcomstudios.com say so.
 
 ### Fixed
