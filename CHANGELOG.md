@@ -3,6 +3,27 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 1.10.0 – 2026-10-06
+
+First published version with everything prepared as 1.9.0 (1.9.0 was built but not released).
+
+### Added
+- **Add and remove platforms while you are live:** in *Outputs & Streaming → Stream destinations* every destination of a running format now has **Go live** (add it to the running stream) and **Remove** (stop streaming there). The other platforms are not interrupted – the new connection starts at the encoder's latest keyframe, so nobody watching on Twitch notices that you just added YouTube. Each platform shows its own state: *Live*, *Connecting…*, *Reconnecting…* or *Failed* (with **Retry**). Removing the last platform asks first and then ends the stream. Streamlabs has to stop the whole stream for this.
+- After a dropped connection the stream reconnects with exactly the platforms that were live, including ones you added during the stream.
+- **Automatic cloud sync (optional):** *Settings → Advanced → Cloud sync → Upload scenes and settings automatically*. When you are signed in, your changes are uploaded about 20 seconds after you make them (never stream keys). A newer copy from another PC is never overwritten – *Settings → Account* shows it and lets you load it or replace it, then automatic upload continues. Loading on another PC stays a manual step, because it replaces the setup there.
+
+### Security
+- Source settings changed in the editor are now checked against the same limits as an imported project (sizes, font sizes, text length, allowed values); settings that are not part of the source are refused.
+- Stream keys still never appear in a log line; adding a platform while live hides its key in the logs as well.
+
+### Website
+- **Fabcom Studios website in Italian:** fabcomstudios.com/it/ – home, studio, engineering and contact in Italian, with the same automatic language choice and EN / DE / IT switch as the FabStream pages (legal texts stay English/German). Better search snippets: titles and descriptions name the company as a Swiss software company and stay within ~160 characters; hreflang, sitemap and structured data cover all three languages. Fixed: fabcomstudios.com/it/ showed the Italian FabStream home page instead of the company site.
+
+### Admin tool (website)
+- **Revenue page:** monthly recurring revenue (yearly plans as 1/12), projected yearly revenue, paying subscriptions per plan and billing period, and per month for the last 12 months the new subscriptions with the value of their first payment, refunds and cancellations. Manual and test-mode licenses are not counted.
+- **CSV export** of the (filtered) license list for Excel – without license keys, protected against spreadsheet formulas, and written to the audit log.
+- Licenses now remember whether they are billed monthly or yearly (shown on the license page).
+
 ## 1.8.0 – 2026-10-05
 
 ### Added
