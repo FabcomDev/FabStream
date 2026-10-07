@@ -3,6 +3,20 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 3.1.0 – 2026-10-07
+
+### Added
+- **Write in your chat from FabStream:** the *Chat* tab has a message field at the bottom. Pick where it goes – Twitch, Kick or both (click the chips) – and press Enter. If a platform still needs a sign-in or chat permission, its chip says so and connects it with one click.
+- **Choose your platforms when you go live:** *Go Live* first shows all your destinations per format – go live everywhere or tick only some (e.g. only TikTok LIVE today). FabStream remembers your choice for next time. Don't want the question? Untick *Always ask* or switch it off in *Settings → General*. The *Go Live* buttons of each format ask the same way, only for that format.
+- **Safe zones for every vertical platform:** next to *Safe zones* a ▾ menu lets you choose which ones you see – TikTok video, **TikTok LIVE** (host bar, rankings, live comments, gifts, comment field), YouTube Shorts, YouTube Live (vertical), Instagram Reels, Instagram Live, Facebook Reels and Snapchat Spotlight. Each platform has its own colour. Sources you move or resize now **snap to the safe-zone edges**, so text and faces land in the free area by themselves (turn it off in the same menu; Ctrl or Alt while dragging still turns snapping off).
+- **Hotkeys for everything:** *Settings → Hotkeys* is grouped and covers every action – go live or record **only 16:9 or only 9:16**, replay buffer on/off, switch directly to scene 1–9, mute/unmute all audio, preview mode (both / 16:9 / 9:16), safe zones on/off and *Write in chat*. New actions start without a shortcut; your existing shortcuts stay.
+- **Commission that pays for your plan:** *Invite & earn* (and *Plan & License*) now shows your **affiliate commission** from the Lemon Squeezy affiliate program: earned in total, not paid out yet, your average per month – and how much more per month you need (and roughly how many paying viewers) until the commission pays for your FabStream plan. Join the program from the same card with the e-mail of your FabStream account.
+
+### Improved
+- **Bigger, clearer side panel:** the right panel (Chat, Activity, Properties, Widgets, Bot) is wider by default and shows the names of all tabs. **Drag the divider** between the preview and the panel to make it wider or narrower – the canvas preview scales to the space that is left and everything still fits. Double-click the divider for the default width. Your width is remembered.
+- **Report a problem / Suggest an idea:** FabStream no longer takes a screenshot on its own. Add one yourself if you want – pick a file, drop it on the dialog or paste it with Ctrl+V (take one with Win+Shift+S). It is shown before sending and can be removed.
+- **Website:** the main button at the top is now *Account*; *Download* is in the menu and leads to the download page.
+
 ## 3.0.0 – 2026-10-07
 
 ### Changed
