@@ -3,6 +3,26 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 2.1.0 – 2026-10-07
+
+### Added
+- **Undo and redo:** *Ctrl+Z* undoes the last change in your scenes – moving, resizing, cropping, adding or removing a source, filters, source settings and more – and *Ctrl+Y* (or *Ctrl+Shift+Z*) brings it back. Up to 100 steps; a drag counts as one step. Undo does not switch the scene you are on and is not active while you type in a field.
+- **Goal bar per platform:** a goal bar can count *All platforms* or only *Twitch*, *Kick* or *YouTube* (*Properties → Platform*) – e.g. one sub goal for Twitch and one for Kick. Tips without a platform (StreamElements tips) only count for *All platforms*.
+- **Text size for widgets:** a *Text size* slider (and exact value in px) in the properties of every widget – chat box, alert box, event list, goal bar, labels and timer.
+- **“Add platform…” – going live on more platforms without copying addresses:** *Settings → Stream → Add platform…* shows Twitch, YouTube, Kick, TikTok LIVE, Instagram Live, Facebook Live and “Other (RTMP server)”. For Twitch, YouTube and Kick one click uses your connected account (FabStream fetches the key itself). For all others, *Open …* takes you to the right page with short steps – just click *Copy* there: FabStream picks up the copied server address and stream key by itself while the dialog is open (only text that looks like a server address or a key, nothing else from your clipboard). TikTok and Instagram start as 9:16, the others as 16:9 – you can change it. Pasting by hand still works.
+
+### Improved
+- **Clicking a source in the preview opens its properties** on the right right away.
+- **Widgets fill their box instead of stretching:** when you make a chat box, event list, goal bar, label or timer bigger or smaller, the text keeps its size and the widget uses the space – a taller chat box shows more messages, and the chat fills the box all the way to the top. Widgets can be resized freely (hold *Shift* to keep the proportions) and look sharp at every output size.
+- **StreamElements connects in one step:** *Widgets → Donations & follows → Connect StreamElements* opens your StreamElements channel page – click *Show secrets* and copy the JWT token, FabStream picks it up and connects by itself (pasting by hand still works).
+
+### Removed
+- **Streamlabs donations:** the Streamlabs connection is gone – use StreamElements for tips (it also reports follows and YouTube members). A Streamlabs token stored by 2.0 is deleted from your PC on the first start of 2.1. Streamlabs widget links still work as a Browser Source.
+
+### Known issues
+- TikTok only shows a stream key to accounts with LIVE access (usually 1,000+ followers), and TikTok and Instagram create a new server address and key for every stream – add them again (or edit the destination) before each stream.
+- StreamElements is still **Beta**: it could only be tested with recorded messages, not with a live account.
+
 ## 2.0.0 – 2026-10-06
 
 ### Added
