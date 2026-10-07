@@ -3,6 +3,14 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 3.3.1 – 2026-10-07
+
+### Fixed
+- **YouTube: connecting works when your channel belongs to another Google account** (a brand account or a second Google account). Before, FabStream stopped with "Another Google / YouTube account is linked already – unlink it first". Now the connected Google account replaces the one that was linked before.
+
+### Improved
+- **Disconnect a platform right in Outputs & Streaming:** the small × next to a connected Twitch, Kick or YouTube removes the connection (after asking). Your destinations and stored stream keys stay.
+
 ## 3.3.0 – 2026-10-07
 
 ### Added
