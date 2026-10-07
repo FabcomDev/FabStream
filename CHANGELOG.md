@@ -3,6 +3,33 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 2.0.0 – 2026-10-06
+
+### Added
+- **Stream widgets built in – no widget links needed:** *Add source → Stream widgets* (or the new *Widgets* tab) adds an **Alert box**, **Chat box**, **Event list**, **Goal bar** or a **Latest / top label** (“Latest donation: Anna – $5.00”, “Top cheer”, “Latest follower” …). FabStream draws them itself from your chat and activity, placed separately in 16:9 and 9:16 like any source.
+- **Alert box:** pops up for follows, subs (and YouTube members), gifted subs, raids, bits and donations / Super Chats – each type on or off, minimum bits / donation / raid size, display time, slide / fade / pop animation, your own sound (through the mixer, so it is in the stream and recording only while the scene is live) and your own picture, GIF or short video. Alerts queue up one after another; *Test alert* buttons show what it looks like.
+- **Donations and follows from Streamlabs or StreamElements:** *Widgets → Donations & follows → Connect…* and paste your Streamlabs “Socket API Token” or StreamElements “JWT Token”. Tips, follows and YouTube members / Super Chats then appear in Activity, in your alert box, goals and labels. The token is stored encrypted on your PC only.
+- **Goal bar** counts subs (gifted subs included), gifted subs, bits, donations or follows automatically while FabStream runs – also while its scene is not on screen; the current value can be edited or reset. Test alerts are never counted.
+- **Chat box on stream** in one click from the Chat tab (16:9, 9:16 or both): messages wrap, can fade out after a few seconds, and subs / gifts / raids / bits / donations can be shown in the chat.
+
+- **Twitch follow alerts straight from Twitch – no Streamlabs needed:** when Twitch is connected in your FabStream account, new followers appear in Activity, in the alert box, goal bars and labels. Already connected Twitch before? *Widgets → Twitch follows → Connect again* (or Settings → Account) once to allow it. A follow that Streamlabs/StreamElements also reports is shown only once.
+- **Emotes as pictures:** Twitch and Kick emotes show as pictures in the Chat tab and in the chat box on stream.
+- **Own sound and picture per alert type:** e.g. a coin sound for donations and a confetti GIF for gifted subs (*alert box → Own sound / picture per alert type*); empty types use the general sound and picture.
+- **Activity and labels survive a restart:** the last follows, subs, gifts, raids, bits and donations – and “Latest donation” / “Top cheer” – are still there after you restart FabStream.
+
+- **Messages read aloud (text-to-speech):** the alert box can read donation, cheer and sub messages aloud with a Windows voice of your choice – after the alert sound, through the mixer (in the stream and recording), with minimum amount, speed, maximum length, “Name says: …” and a list of blocked words. Links and cheer words are skipped, the alert stays on screen while it speaks. *Alert box → Read messages aloud.*
+- **Timer / countdown widget:** “Starting in 4:59” countdown with Start / Pause / Reset, countdown to a time of day (e.g. 20:00), stopwatch, clock or stream uptime – with your own title and end text (“Starting now!”).
+
+### Improved
+- **Right side is now one panel with tabs: Chat (open by default) · Activity · Properties · Widgets.** The chat has the full height; the source properties open when you need them – *right-click a source → Properties…*, double-click it in the source list, or right after adding a source. The open tab is remembered.
+- **Activity tab:** every follow, sub, gift, raid, bits and donation with time and the viewer's message, a red counter on the tab for new events, and *Show again* to replay any of them as an alert.
+- **Settings → Plan & License shows everything about your licenses:** the plan on this PC (where it comes from, key, renewal, last check), every license on your account with status, renewal or end date, monthly / yearly billing, purchase date, how many PCs use it and which ones (remove a PC with one click), *Invoices & billing*, adding a license key to your account, and the plan comparison. Before, these details were only on the *Account* page.
+- Website: new feature “Alerts, chat box & goals built in” (EN/DE/IT, marked Beta); the privacy policy explains the optional donation-service connection.
+
+### Known issues
+- **Donation services are Beta:** Streamlabs and StreamElements could only be tested with recorded messages, not with live accounts yet – please report anything that does not show up.
+- Twitch follow alerts need the Twitch connection of your FabStream account (Settings → Account); Kick follows are not available yet.
+
 ## 1.13.0 – 2026-10-06
 
 ### Added
