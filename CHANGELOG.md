@@ -3,6 +3,30 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 3.2.0 – 2026-10-07
+
+### Changed
+- **Invite & earn is now a commission:** you get **20 %** of every paid subscription that starts through your link – every month it is paid (yearly plans count with a twelfth of the year). In the app (*profile menu → Invite & earn*, *Plan & License*) and on your account page you see what your commission makes **this month** and **which plan it pays for** (e.g. 5 viewers on Premium pay for your own Premium) and what is missing for the next one. Your own subscription is still billed every month as usual – invites no longer unlock free plans. A free plan you already got from the old program stays until its period ends. The commission is **paid out automatically** by our payment partner Lemon Squeezy: join its affiliate program once and paste your affiliate link under *Payout* on your account page – from then on every purchase through your FabStream link (website or app) is credited to you there.
+
+### Added
+- **Select several sources at once:** Ctrl+click sources in the preview (or in the source list; Shift+click selects a range, Ctrl+A all) – then move them together, resize them together with the handles of the box around them, nudge them with the arrow keys, or right-click to align (edges, centres), distribute evenly, center the group, change the layer order, hide, lock or remove them all.
+- **Source list:** click the *16:9* / *9:16* badge of a source to show or hide it in that format, and remove a source with the bin icon right next to it.
+- **Your account on the website got more:** a **profile menu** at the top of every page (your name, plan and all account sections, sign out), the **commission of the month** on the overview, a **FabStream card** with the newest version, the direct download and every PC on your account with the version it runs (*update available* when it is behind), and a new **Cloud backup** tab: see the copies of your scenes and settings the app saved, download them as a file or delete them – your PCs keep their own data.
+
+### Improved
+- **FabBot tab redesigned – and much more configurable:** a clear header shows where FabBot can write (green chip = ready; a click on an orange chip connects what is missing), and four pages: *Live*, *Commands*, *Timers*, *Mod tools*.
+- **FabBot giveaways your way:** choose who can enter (everyone, subscribers, VIPs), give subscribers more luck (2×, 3×, 5× tickets), keep yourself and your mods out, draw several winners at once, let entries close by themselves after 1–10 minutes and draw automatically. The chat messages for start and winner are yours to write, with clickable variables like {prize} or {winner} and a live preview.
+- **FabBot polls:** press Enter to add the next answer, pick the length with one click (30 s to "until I end it"), decide whether viewers may change their vote, and write your own start and result messages.
+- **FabBot commands:** search, ready-made commands with one click (!discord, !socials, !commands, !lurk, !so, !uptime, !fabstream), and an editor per command with a preview of the answer, who may use it (everyone, subscribers, VIPs or mods) and the cooldown as quick choices. New variable {commands} lists all your commands.
+- **FabBot timed messages and mod tools:** intervals and chat activity as quick choices, plus *Send now*. **Mod tools:** blocked words as chips you add with Enter.
+- **Safe-zone menu stays open:** in the *Safe zones ▾* menu you can now tick several platforms in a row without the menu closing after every click, and pick **All** or **None** with one click.
+- **fabcomstudios.com has an address for every language:** the English pages are now at fabcomstudios.com/en/ (like /de/ and /it/). fabcomstudios.com itself opens the page in your language, and the old English addresses forward to the new ones automatically.
+
+### Fixed
+- **No more stuttering audio while multistreaming:** desktop and application audio now goes straight to FabStream's audio engine instead of waiting behind the video work of two canvases, the audio buffer gives itself a little more room automatically if your PC gets busy (and shrinks back when things calm down), short gaps are softened instead of clicking, and the stream encoder keeps the audio in step with its timestamps. Your viewers hear smooth sound in 16:9 and 9:16 at the same time.
+- **No more "disabled" next to working destinations:** it only meant a platform was left out of your last Go Live. Now each destination in *Outputs & Streaming* has a checkbox for whether it is used next time you go live, next to its key status (*key stored* / *no key*).
+- The hotkey *Replay buffer on / off* now points to the right place when the replay buffer is switched off (*Settings → Diagnostics → Features*).
+
 ## 3.1.0 – 2026-10-07
 
 ### Added
