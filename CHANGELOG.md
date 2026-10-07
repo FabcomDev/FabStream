@@ -3,6 +3,20 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 3.3.0 – 2026-10-07
+
+### Added
+- **Viewers at a glance in the Chat tab:** every channel shows how many people are watching right now (Twitch and Kick), and **Total viewers** adds up all live channels – hover it for the peak since FabStream started. Offline channels say "offline". Updated every minute.
+- **Platforms in Outputs & Streaming:** Twitch, Kick and YouTube side by side, each with the same options once connected – **Title** (stream title & category), **Key/Add** (fetches your stream key into the destination, or adds the platform with its key) and, for YouTube, **Chat** (opens your live chat). Not connected yet: one click on **Connect**.
+
+### Improved
+- **Every chat line names its platform:** a coloured pill (Twitch, Kick, YouTube, StreamElements) next to the dot, so mixed chats are easy to read.
+- **YouTube connection:** if Google's consent page left the YouTube permissions unticked, FabStream now says so (Settings → Stream and Outputs & Streaming) and offers **Allow** to connect again – before, YouTube silently stayed "not connected".
+- Website: English pages now have their own address too (`/en/…`, like `/de/…` and `/it/…`); the bare address picks your language. Old links (apps, e-mails, bookmarks, payment pages) forward to the new addresses.
+
+### Fixed
+- Website: on the Italian pages the links to the legal texts and the privacy policy pointed to addresses that no longer exist.
+
 ## 3.2.0 – 2026-10-07
 
 ### Changed
