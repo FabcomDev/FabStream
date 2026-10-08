@@ -3,6 +3,19 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 3.5.0 – 2026-10-08
+
+### Added
+- **Game Capture:** *Sources → + → Game Capture* records your game directly. Choose **Capture any game automatically** – FabStream takes the known game that is running (Fortnite, VALORANT, Minecraft, CS2, League of Legends, Apex and many more), waits while none is open and moves on to the next game you start – or pick the game window yourself (known games are listed first). When the game restarts, FabStream finds it again by itself. Nothing is injected into the game, so anti-cheat is not affected; games in exclusive fullscreen may show black – switch them to borderless or windowed fullscreen.
+- **Scene presets:** *Scenes → + → Scene from a preset…* (or straight from the menu) adds a ready-made scene for 16:9 and 9:16 at once: **Starting soon** (title, 5-minute countdown, chat), **Gaming** (Game Capture, webcam, alerts, goal bar, chat in 9:16), **Just Chatting** (big webcam, chat, event list, latest donation), **Be right back** and **Ending** (thank-you title, recent supporters, top donation). Everything in it is a normal source you can move, change or remove. Timers start when you press start in their properties.
+- **App tour in English, German and Italian:** a short guided tour lights up each part of the window – scenes, sources, the two canvases, audio mixer, Go Live, chat & widgets, account – and explains it. It starts once (also once after this update), can be skipped at any step and is then not shown again. Watch it again any time: *profile menu → App tour*.
+- **Streamlabs is back for donations:** *Widgets → Donations & follows → Streamlabs → Connect* opens your Streamlabs API settings – copy **Your Socket API Token** and FabStream picks it up and connects by itself (pasting works too). Streamlabs tips, follows, YouTube members and Super Chats then show up in Activity, alerts, goals and labels, next to StreamElements if you use both. The token is stored encrypted on your PC only.
+- **Admin badge:** FabStream team accounts get a gold *Admin* badge in the app (profile) and on the website, with a direct link to the admin dashboard.
+
+### Improved
+- **The preview's left and bottom edges can be dragged too:** like the divider to the side panel, you can now drag the edge between the scenes / sources column and the preview, and the edge between the preview and the audio mixer / outputs row. FabStream remembers the sizes; double-click an edge for the default. The preview always keeps enough room, and its toolbar stays on one line when it gets narrower.
+- **Admin dashboard (FabStream team):** a clearer layout with grouped navigation, a search over all accounts and licenses (Ctrl+K), key figures with trends, 30-day charts for sign-ups, subscriptions and downloads, and a list of what needs attention (open payments, licenses ending soon, new bug reports, licenses without an account). New pages for feedback, app versions in use, top inviters and system status, plus tools: extend a license by 7 / 30 / 365 days, send a test e-mail, export accounts and licenses as CSV.
+
 ## 3.4.1 – 2026-10-08
 
 ### Fixed
