@@ -3,6 +3,15 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 3.5.3 – 2026-10-08
+
+### Improved
+- **Faster help from the FabStream team:** our support team now has its own support tool – your bug reports and ideas are tracked until they are handled, and whoever helps you sees the notes of earlier conversations, so you don't have to explain everything again.
+
+### Fixed
+- **Plans can only be bought with real payments:** while our payment system is still being tested, the website and the app's *Buy* button show "purchases open soon" instead of a test checkout – before, a test payment could unlock Premium, Ultra or Max. Licenses you already have keep working until real sales start.
+- **Safer admin access:** the website's admin tool can only be opened by the personally named administrators, no longer by the shared support mailbox.
+
 ## 3.5.2 – 2026-10-08
 
 ### Improved
