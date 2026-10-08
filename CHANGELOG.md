@@ -3,6 +3,15 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 3.5.1 – 2026-10-08
+
+### Fixed
+- **Game Capture finds your game when you switch to it:** *Capture any game automatically* used to know games only by a list of titles, so many games were never picked up – also after Alt+Tab. It now looks at the program behind each window: games from Steam, Epic, Riot, Xbox, GOG, Ubisoft, EA and Rockstar folders, Unity / Unreal / GameMaker / Godot games and any fullscreen program you switch to are recognised, and the game you Alt+Tab to wins. When you look at something else (browser, Discord …), the capture stays on your game.
+- **Never browsers, FabStream or other apps:** browsers (also in fullscreen), FabStream itself, launchers (Steam, Epic, Battle.net, Riot Client …), Discord, OBS, video players, editors and Windows windows are never taken as a game. The game picker marks the detected games and lists them first.
+
+### Known issues
+- A game in exclusive fullscreen can still show black – switch it to borderless / windowed fullscreen. A game that is neither in a known folder nor fullscreen is found when you pick it in *Choose game…*.
+
 ## 3.5.0 – 2026-10-08
 
 ### Added
