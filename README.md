@@ -66,7 +66,8 @@ All changes: [Changelog](CHANGELOG.md).
 | 🎙️ **Voice presets** | *Deep Podcast*, *Broadcast Radio*, *Clear Streamer* … – optionally tuned to your voice, your room and your microphone after a short voice analysis. |
 | 🎧 **Game & sound presets** | *Cinematic*, *3D Surround*, *Competitive – Footsteps*, *Story & Dialogue*, *Punchy Arcade*, *Background Bed* – each leaves a "voice pocket" so you are always understood over the game. |
 | 🎵 **Audio mixer** | Microphones, desktop audio, single applications (Discord, Spotify, a game) as their own channels, background music from your own playlist, monitoring and filters. |
-| ⏪ **Replay buffer & clips** | One click saves the last moments as 16:9 **and** 9:16 MP4 – instantly, no re-encoding. Cut clips from recordings and upload them to YouTube Shorts or your TikTok drafts. |
+| ⏪ **Replay buffer & clips** | One click saves the last moments as 16:9 **and** 9:16 MP4 – instantly, no re-encoding. |
+| ✂️ **Auto-Cutter** | FabStream finds the highlights of your recording, shows them on a timeline under a 16:9 and a 9:16 preview, you adjust them – one click cuts every clip in both formats and shares them with title, description and hashtags to YouTube Shorts and TikTok. |
 | 🎬 **Transitions & studio mode** | Fade, slide, swipe, wipe and stinger videos; prepare the next scene while the current one stays live. |
 | ⚡ **One encoder per format** | Streaming, recording and the replay buffer of a format share one hardware encoder (NVIDIA NVENC, AMD AMF, Intel Quick Sync, automatic x264 fallback) – **2 encoder sessions** for everything. |
 | 🧭 **Assistant & self-healing** | The Assistant picks the settings your PC and upload can carry; a crashed encoder restarts on its own and the Outputs panel warns early about dropped frames or a slow upload. |
@@ -147,6 +148,9 @@ Compositing both canvases took about 0.2 ms per frame. Results on other hardware
 | Replay buffer & instant clips | 2 min | 5 min | 10 min | **30 min** |
 | Watermark / time limit | **none** | **none** | **none** | **none** |
 | PCs per license | – | 1 | 3 | **5** |
+| Auto-Cutter: find & edit highlights | ✅ | ✅ | ✅ | ✅ |
+| Auto-Cutter: cut clips in 16:9 + 9:16 | – | ✅ | ✅ | ✅ |
+| Share clips to YouTube & TikTok from the app | – | – | ✅ | ✅ |
 | Early access to preview features | – | – | – | ✅ |
 | Price per month | **$0** | **$7.99** | **$14.99** | **$24.99** |
 | Price per year | – | $59 | $109 | $179 |
@@ -174,7 +178,7 @@ FabStream checks for updates on every start. **Update & restart** downloads the 
 <details>
 <summary><b>Is the free version really free?</b></summary>
 
-Yes. Both formats at once up to 1080p60, Game Capture, widgets and alerts, FabBot, voice and game presets, recording, replay clips and all filters are free – with no watermark and no time limit. Premium, Ultra and Max add multistream (3 or 8 platforms per format), 1440p or 4K, up to 120 or 240 fps, longer replay buffers and more PCs.
+Yes. Both formats at once up to 1080p60, Game Capture, widgets and alerts, FabBot, voice and game presets, recording, replay clips and all filters are free – with no watermark and no time limit. Finding and editing highlights in the Auto-Cutter is free too. Premium, Ultra and Max add multistream (3 or 8 platforms per format), 1440p or 4K, up to 120 or 240 fps, longer replay buffers and more PCs – Premium cuts Auto-Cutter clips, Ultra also shares clips to YouTube Shorts and TikTok from the app.
 </details>
 
 <details>
@@ -242,10 +246,11 @@ FabStream ist ein Streaming-Studio für Windows, das **16:9 und 9:16 gleichzeiti
 
 - **Alles eingebaut:** Game Capture (erkennt dein Spiel automatisch), Szenen-Vorlagen, Alerts und Widgets, Chat von Twitch, Kick und TikTok, FabBot (Umfragen, Gewinnspiele, Befehle), Voice- und Game-Presets, Hintergrundmusik, Replay-Clips in beiden Formaten.
 - **Go Live:** zeigt pro Plattform, ob sie bereit ist – fehlt ein Stream-Key oder ein Konto, behebst du es mit einem Klick. Titel, Kategorie und Tags für Twitch, Kick und YouTube direkt aus FabStream.
+- **Auto-Cutter:** findet die Highlights deiner Aufnahme, zeigt sie auf einer Zeitleiste unter einer 16:9- und einer 9:16-Vorschau – verschieben, Cut drücken, und alle Clips in beiden Formaten gehen mit Titel, Beschreibung und Hashtags an YouTube Shorts und TikTok (Schneiden ab Premium, Teilen ab Ultra).
 - **Einstellungen → Assistent:** misst Upload, Download, Ping und deinen PC und stellt die beste Qualität für beide Formate ein.
 - **Kostenlos:** beide Formate gleichzeitig bis 1080p60, alle Funktionen oben, Aufnahme, 2 Minuten Replay-Puffer – **ohne Wasserzeichen, ohne Zeitlimit**.
-- **Premium (7,99 € / Monat · 59 € / Jahr):** 3 Plattformen pro Format, bis 1440p und 120 fps, 5 Minuten Replay, 1 PC.
-- **Ultra (14,99 € / Monat · 109 € / Jahr):** 8 Plattformen pro Format, bis 4K und 240 fps, 10 Minuten Replay, 3 PCs.
+- **Premium (7,99 € / Monat · 59 € / Jahr):** 3 Plattformen pro Format, Auto-Cutter-Clips schneiden, bis 1440p und 120 fps, 5 Minuten Replay, 1 PC.
+- **Ultra (14,99 € / Monat · 109 € / Jahr):** 8 Plattformen pro Format, Clips direkt auf YouTube & TikTok teilen, bis 4K und 240 fps, 10 Minuten Replay, 3 PCs.
 - **Max (24,99 € / Monat · 179 € / Jahr):** alles aus Ultra, 30 Minuten Replay, 5 PCs, früher Zugang zu neuen Funktionen.
 - Alle Funktionen 7 Tage gratis testen, ohne Kreditkarte.
 - **Installation:** [`FabStream-Setup.exe` herunterladen](https://github.com/FabcomDev/FabStream/releases/latest/download/FabStream-Setup.exe) und starten. Zeigt Windows SmartScreen *„Der Computer wurde durch Windows geschützt"*: **Weitere Informationen → Trotzdem ausführen**.
