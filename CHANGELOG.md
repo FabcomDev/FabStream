@@ -3,6 +3,22 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 3.6.0 – 2026-10-08
+
+### Added
+- **Auto-Cutter – your stream's best moments as clips:** open *Outputs → Auto-Cutter* (or the wand next to a recording in *All recordings*). FabStream listens to the recording and marks its highlights – loud reactions, cheering, the big plays – on a timeline with the waveform, right under **two previews: 16:9 and 9:16** of the same moment, kept in sync (FabStream lines the two recordings up by their sound). Choose how picky it is (*Only big reactions / Normal / Many highlights*) and the clip length (short for TikTok and Shorts, longer for YouTube).
+- **Edit the highlights like in a video editor:** drag a marker to move it, drag its edges to make it longer or shorter, type exact times, add your own (*Add highlight*, double-click the timeline or **N**) and remove the ones you don't want (**Del**). Play a highlight in a loop, zoom the timeline (**Ctrl + mouse wheel**), **Space** plays, **I / O** set start and end at the playhead. Per highlight you choose the formats to cut – 16:9, 9:16 or both.
+- **One click cuts every clip:** *Cut* turns all highlights into clips in their formats at once – fast, without re-encoding, straight into your clip library. **Cutting needs Premium**; finding and editing highlights is free.
+- **Share to all platforms at once:** after cutting, give each clip a title, a description and hashtags (plus hashtags for all clips), tick YouTube and/or TikTok and press *Share*. YouTube gets the 9:16 file as a **Short** with your title, description and hashtags as tags; TikTok gets it in your inbox and FabStream copies the caption for you. Progress and the link to every upload show right next to the clip. **Sharing needs Ultra.**
+- **The 7-day trial includes the Auto-Cutter** with cutting and sharing.
+
+### Improved
+- **YouTube uploads with tags:** clips you upload to YouTube now carry your hashtags as video tags.
+- **Clip upload is part of Ultra:** uploading clips from the clip library to YouTube Shorts or TikTok now needs Ultra (or the trial), like sharing from the Auto-Cutter. Saving, cutting by hand and playing clips stay free.
+
+### Known issues
+- A recording whose video the app cannot play (rare formats) shows no preview picture – the timeline, cutting and sharing still work. Recordings without sound get no automatic highlights; add them yourself.
+
 ## 3.5.3 – 2026-10-08
 
 ### Improved
