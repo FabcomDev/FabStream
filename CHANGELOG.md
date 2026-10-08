@@ -3,6 +3,20 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 3.7.1 – 2026-10-08
+
+### Fixed
+- **Sound late in the stream:** viewers heard the sound up to about half a second after the picture. Desktop and application audio (game, Discord, music) built up a delay after every quiet moment and after short busy phases of the PC – the delay now stays at a few hundredths of a second, also in long streams. The mixer also runs with smaller audio buffers, so the microphone reaches the stream sooner.
+
+- **Recordings stay safe while they run:** the Auto-Cutter no longer lists a recording that is still running (it appears as soon as you stop it), and FabStream never prepares a file that is still being written. If FabStream or the PC is closed while a recording is being prepared, the recording is put back in order on the next start – nothing is lost, and half-finished copies don't show up in your recordings.
+
+### Added
+- **Audio sync:** *Settings → Audio → Audio sync* moves the sound earlier (or later) in streams and recordings, in 10-ms steps up to one second – for setups where a device itself is slow (e.g. some wireless headsets or capture cards). Applies the next time you go live or record.
+
+### Improved
+- **Smooth playback in the Auto-Cutter:** video and sound of a recording no longer stutter in the editor. The 9:16 preview now follows the 16:9 one smoothly instead of jumping to catch up, and the studio behind the tab rests (only a few frames per second) while nothing records, streams or buffers – the status bar shows *Studio resting*. As soon as an output runs, the studio renders at full speed again.
+- **Recordings jump to any moment instantly:** FabStream records crash-safe MP4 files, which players can only search slowly. After a recording ends (once nothing records or streams any more), FabStream now adds a seek index to the file – in seconds, without re-encoding and without changing the picture or sound. Recordings you made before are prepared the first time you open them in the Auto-Cutter ("Preparing the recording for smooth playback"). If a file can't be prepared, it stays exactly as it was.
+
 ## 3.7.0 – 2026-10-08
 
 ### Added
