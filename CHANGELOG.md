@@ -3,6 +3,18 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 3.5.2 – 2026-10-08
+
+### Improved
+- **New website:** fabstream.fabcomstudios.com has a new home page with fresh screenshots of the current app – the editor with both formats, the built-in alerts and widgets, Go Live to several platforms, voice presets, scene presets and FabBot – plus a clearer download page and a new preview picture for links shared on social media. In English, German and Italian.
+- **Scene from a preset:** the last preset card now fills its row instead of sitting next to an empty space; the same goes for the other card lists in the app.
+
+### Fixed
+- **StreamElements shows "Connected":** after connecting, the toast said connected but *Widgets → Donations & follows* kept showing "Not connected" when the Widgets tab was opened before the Chat tab. The row now shows the real state right away (Connecting… → Connected, or the error).
+
+### Removed
+- **Streamlabs:** the Streamlabs donation connection is gone again – connect **StreamElements** for tips, YouTube members and Super Chats (Twitch follows still come straight from Twitch). A stored Streamlabs token is deleted from your PC on the next start. Overlay links of any service still work as a browser source.
+
 ## 3.5.1 – 2026-10-08
 
 ### Fixed
