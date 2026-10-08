@@ -67,7 +67,7 @@ All changes: [Changelog](CHANGELOG.md).
 | 🎧 **Game & sound presets** | *Cinematic*, *3D Surround*, *Competitive – Footsteps*, *Story & Dialogue*, *Punchy Arcade*, *Background Bed* – each leaves a "voice pocket" so you are always understood over the game. |
 | 🎵 **Audio mixer** | Microphones, desktop audio, single applications (Discord, Spotify, a game) as their own channels, background music from your own playlist, monitoring and filters. |
 | ⏪ **Replay buffer & clips** | One click saves the last moments as 16:9 **and** 9:16 MP4 – instantly, no re-encoding. |
-| ✂️ **Auto-Cutter** | FabStream finds the highlights of your recording, shows them on a timeline under a 16:9 and a 9:16 preview, you adjust them – one click cuts every clip in both formats and shares them with title, description and hashtags to YouTube Shorts and TikTok. |
+| ✂️ **Auto-Cutter** | Its own tab next to the Studio, with all your recordings and clips to browse. FabStream finds the highlights of your recording, shows them on a timeline under a 16:9 and a 9:16 preview, you adjust them – one click cuts every clip in both formats and shares them with title, description and hashtags to YouTube Shorts and TikTok. |
 | 🎬 **Transitions & studio mode** | Fade, slide, swipe, wipe and stinger videos; prepare the next scene while the current one stays live. |
 | ⚡ **One encoder per format** | Streaming, recording and the replay buffer of a format share one hardware encoder (NVIDIA NVENC, AMD AMF, Intel Quick Sync, automatic x264 fallback) – **2 encoder sessions** for everything. |
 | 🧭 **Assistant & self-healing** | The Assistant picks the settings your PC and upload can carry; a crashed encoder restarts on its own and the Outputs panel warns early about dropped frames or a slow upload. |
