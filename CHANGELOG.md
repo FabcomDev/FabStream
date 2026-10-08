@@ -3,6 +3,16 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 3.7.0 – 2026-10-08
+
+### Added
+- **Auto-Cutter gets its own tab:** next to *Studio* in the top bar. On the left are your **recordings** (one entry per stream, 16:9 and 9:16 together, with their length) and your **clips**. The studio keeps running in the background – your stream and recording go on while you cut.
+- **Browse all your clips:** the *Clips* side shows every clip as a card with a preview that plays when you point at it. The 16:9 and 9:16 file of a moment are one card. Filter by format and by where it came from (Auto-Cutter, replay buffer, cut by hand), search and sort (newest, oldest, longest). Click a clip to watch it in both formats, see its details, show it in its folder, delete it (both formats, recycle bin) or share it. Tick several clips to share them in one go.
+
+### Improved
+- **The film icon next to *Save clip*** now opens your clips in the Auto-Cutter tab.
+- **App tour:** a new step shows the Auto-Cutter tab.
+
 ## 3.6.0 – 2026-10-08
 
 ### Added
