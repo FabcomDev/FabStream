@@ -3,6 +3,12 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 3.4.1 – 2026-10-08
+
+### Fixed
+- **StreamElements connects:** saving the JWT token stopped with "invalid secret id" even with the right token. The token is now stored (encrypted, as before) and StreamElements connects – paste or pick it up again in *Widgets → Donations & follows*.
+- **TikTok LIVE chat:** the same error stopped saving the TikTool API key in *Chat → ⚙*; it is stored now.
+
 ## 3.4.0 – 2026-10-07
 
 ### Added
