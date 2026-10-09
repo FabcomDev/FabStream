@@ -68,6 +68,8 @@ All changes: [Changelog](CHANGELOG.md).
 | 🎵 **Audio mixer** | Microphones, desktop audio, single applications (Discord, Spotify, a game) as their own channels, background music from your own playlist, monitoring and filters. |
 | ⏪ **Replay buffer & clips** | One click saves the last moments as 16:9 **and** 9:16 MP4 – instantly, no re-encoding. |
 | ✂️ **Auto-Cutter** | Its own tab next to the Studio, with all your recordings and clips to browse. It reads your voice, the chat, raids and donations, your markers and the picture – not just the volume – and you choose which audio counts. FabStream finds the highlights of your recording, shows them on a timeline under a 16:9 and a 9:16 preview, you adjust them – one click cuts every clip in both formats and shares them with title, description and hashtags to YouTube Shorts and TikTok. |
+| 🎚️ **Mixer & separate tracks** | A Mixer tab with master and 16 inserts – effect slots, fader, pan, mute, solo and meters. Press REC on up to 5 inserts and every recording gets the mix plus separate tracks (voice, game, Discord …) for your editor. Streams keep the mix. |
+| 🎛️ **Stream Deck & phone remote** | FabStream speaks the OBS remote language (obs-websocket 5): the Stream Deck *OBS Studio* plugin, Touch Portal, Streamer.bot, Loupedeck and Companion control scenes, going live, recording, mute, clips and studio mode – and each format can have its own button. Or open the phone remote in your Wi-Fi: live picture, scenes, mixer, go live. Password protected, never reachable from the internet. |
 | 🎬 **Transitions & studio mode** | Fade, slide, swipe, wipe and stinger videos; prepare the next scene while the current one stays live. |
 | ⚡ **One encoder per format** | Streaming, recording and the replay buffer of a format share one hardware encoder (NVIDIA NVENC, AMD AMF, Intel Quick Sync, automatic x264 fallback) – **2 encoder sessions** for everything. |
 | 🧭 **Assistant & self-healing** | The Assistant picks the settings your PC and upload can carry; a crashed encoder restarts on its own and the Outputs panel warns early about dropped frames or a slow upload. |
@@ -148,6 +150,8 @@ Compositing both canvases took about 0.2 ms per frame. Results on other hardware
 | Replay buffer & instant clips | 2 min | 5 min | 10 min | **30 min** |
 | Watermark / time limit | **none** | **none** | **none** | **none** |
 | PCs per license | – | 1 | 3 | **5** |
+| Mixer (16 inserts) & separate audio tracks | ✅ | ✅ | ✅ | ✅ |
+| Stream Deck, Touch Portal & phone remote | ✅ | ✅ | ✅ | ✅ |
 | Auto-Cutter: find & edit highlights | ✅ | ✅ | ✅ | ✅ |
 | Auto-Cutter: cut clips in 16:9 + 9:16 | – | ✅ | ✅ | ✅ |
 | Share clips to YouTube & TikTok from the app | – | – | ✅ | ✅ |
