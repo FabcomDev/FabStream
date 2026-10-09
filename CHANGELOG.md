@@ -3,6 +3,14 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.4.0 – 2026-10-09
+
+### Added
+- **VALORANT in the Auto-Cutter:** *Settings → Games → VALORANT* → switch it on. While you play, FabStream reads your own match from the Riot Client on your PC – **won rounds** and the **match result** become game events the moment they happen, and the Games page shows the map and the live score. **Connect your Riot account** once on the same page, and a minute after every match FabStream adds **every kill, first bloods, knife and ultimate kills, double/triple/quadra kills, aces, kill streaks (3, 5, 7, 10 … kills without dying, across rounds), clutches (1v1 to 1v5 – you as the last one alive and your team wins), spike plants and defuses, team aces** – lined up to the second with your recording, also with recordings that already ended. The Auto-Cutter ranks them (ace and clutch 1v3 first) and labels them (*Clutch 1v3*, *Kill streak ×7*, *Quadra kill* …); the Games page shows your last match (score, kills, deaths, headshots, moments) and has *Check now*. Part of Premium and up. The data comes from Riot's official match data – FabStream never sees your Riot password, and other players' names never reach FabStream.
+
+### Known issues
+- **VALORANT kills, aces and clutches need Riot's approval of FabStream** (official match data). Until then *Connect Riot account* says it is not available yet; won rounds and the match result from the Riot Client work already.
+
 ## 4.3.0 – 2026-10-09
 
 ### Added
@@ -11,7 +19,7 @@ Format: Added / Improved / Fixed / Known issues.
 - **Post clips straight to TikTok:** sharing a clip to TikTok (clip library or Auto-Cutter) now opens a *Post to TikTok* window: it shows the TikTok account the post goes to and a preview, you write or edit the caption (hashtags and @mentions work), choose **who can see it** (Everyone, Friends, Followers or Only me – nothing is preselected), allow **comments, Duet and Stitch** if you want (all start off; options you switched off in TikTok stay greyed out) and, if the clip promotes something, **disclose commercial content** (*Your brand* or *Branded content*, with TikTok's label). Press *Post* and FabStream uploads and publishes it – it may take a few minutes until it is visible on your profile. Prefer to finish in the TikTok app? *Send to drafts instead* works like before. In the Auto-Cutter every clip gets its own window.
 
 ### Improved
-- **Layouts you can rearrange – Auto-Cutter and Moderator Studio:** drag an area by its grip (⠿) to another place and the others slide aside – e.g. the recordings list to the right, the timeline above the previews or the highlights list on top; in the Moderator Studio the three columns and every card (stream, chat modes, shield, announcement, user, log) can be moved, also into the other side column. All dividers resize, the layout is remembered, arrow keys on a grip move it too, and *Reset layout* (layers icon) brings the default back.
+- **Layouts you can rearrange – Auto-Cutter and Moderator Studio:** drag an area by its grip (⠿) to another place and the others slide aside – in the Auto-Cutter the recordings list and the clip details to the other side (the editor keeps its order; drag the line under the previews to make them bigger or smaller); in the Moderator Studio the three columns and every card (stream, chat modes, shield, announcement, user, log) can be moved, also into the other side column. All dividers resize, the layout is remembered, arrow keys on a grip move it too, and *Reset layout* (layers icon) brings the default back.
 
 ### Known issues
 - **Connect TikTok once more** (Clips → Upload → TikTok) to allow posting – connections made before 4.3 can only send to drafts.
