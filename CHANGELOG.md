@@ -3,6 +3,16 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 3.8.0 – 2026-10-09
+
+### Added
+- **The Auto-Cutter understands what happens – not just what is loud:** a highlight now comes from several signs together: **your voice**, **chat going wild**, **raids, donations, subs and follows**, **your markers and saved clips** and **big changes on screen** (death screen, explosion, kill cam). Game sound that simply gets louder is no longer a highlight on its own – only when another sign comes with it. Every highlight says why it was picked ("You reacted · Chat went wild"), and the signs appear as coloured dots on the timeline.
+- **Choose exactly which sound counts:** *Auto-Cutter → What counts* lists every audio source of the recording – microphone, game or desktop sound, Discord, music – each with **Strong** (enough on its own), **Counts** (only together with another sign) or **Off**. Switch the other signs on or off too. FabStream remembers your choice for the next recording.
+- **Recordings keep their sources apart:** while you record, FabStream notes the level of every audio source, chat activity, stream events and your markers (a few MB for hours, stored on your PC) – so the Auto-Cutter can tell your shout from a loud game.
+
+### Known issues
+- Recordings made before 3.8 only have the mixed sound: there the Auto-Cutter uses all sound together plus the picture. Chat, events and markers are available for new recordings.
+
 ## 3.7.1 – 2026-10-08
 
 ### Fixed
