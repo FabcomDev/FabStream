@@ -3,6 +3,25 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.1.0 – 2026-10-09
+
+### Added
+- **Recordings sorted by format:** new recordings go to **Horizontal** (16:9) and **Vertical** (9:16) inside your recordings folder, clips to *Clips → Horizontal / Vertical*. Older recordings stay where they are and still show up in the Auto-Cutter and the library.
+- **Settings made simpler:** the menu is grouped (Basics, Picture & sound, Output, Control, Accounts, System). *Remote control* and *Games* are now big switches and a button per device or game – behind each button short steps with the values to copy (address, port, password); port and new password sit under *Advanced*. *Account* is now *Accounts*.
+- **Save keeps the settings open:** *Save* shows "Saved" and you can keep going; *Close* closes the window. The settings window is bigger.
+
+### Improved
+- **Website:** the comparison guide is now *FabStream vs. other streaming platforms* (the old address forwards to it).
+
+### Fixed
+- **BeamNG.drive: full braking is no crash any more.** A crash is now a real impact on the car body (MotionSim: a fast loss of speed together with a hard knock) – full braking, also with locked wheels, never counts.
+- **Game Capture is smooth:** while a game is captured, FabStream no longer asks Windows for every capturable window every 2 seconds (that made the picture stutter) – it only checks which window is in front. The capture runs at a steady frame rate.
+- **No black flashes in Game Capture:** while a game shows a black screen (loading, switching modes) the last real picture stays on screen, for up to 20 seconds.
+- Settings pages could slide under the *Cancel / Save* buttons in smaller windows.
+
+### Known issues
+- BeamNG crashes need *MotionSim* switched on in BeamNG (OutGauge alone has no data about the car body).
+
 ## 4.0.0 – 2026-10-09
 
 ### Added
@@ -44,14 +63,14 @@ Format: Added / Improved / Fixed / Known issues.
 
 ### Added
 - **Mixer tab – like FL Studio, only simpler:** a new tab between *Studio* and *Auto-Cutter* with a **master and 16 inserts**. Send each audio source to an insert (*One insert per source* does it in one click), and every insert gets **10 plugin slots** with the built-in effects (EQ, compressor, noise gate, limiter, de-esser, expander, warmth, game EQ, stereo width, delay …), a **fader, pan, mute and solo**, plus live meters. The master has its own slots too – e.g. a limiter on everything your viewers hear.
-- **Separate audio tracks in recordings (like OBS' 6 tracks):** switch on *Settings → Recording → Separate audio tracks* and press **REC** on up to 5 inserts. Every recording then has track 1 = the full mix plus one track per REC insert (e.g. *Mic*, *Game*, *Discord*), named after the insert – so you can cut, mute or level your voice, the game and Discord separately in Premiere, DaVinci Resolve or CapCut. The tracks stay sample-exact with the picture. Your stream is not affected: platforms always get the mix. Replay clips keep the tracks too.
-- **Control FabStream with your Stream Deck – and everything else built for OBS:** FabStream now speaks the same remote language as OBS Studio (obs-websocket 5). The Elgato Stream Deck *OBS Studio* plugin, Touch Portal, Streamer.bot, Loupedeck, Bitfocus Companion and other OBS remotes work without anything extra: switch scenes, go live, record, mute and set volumes, show and hide sources, studio mode and transition, replay buffer and *Save clip*. Switch it on in *Settings → Remote control*; it shows the password and what to enter in each app.
+- **Separate audio tracks in recordings:** switch on *Settings → Recording → Separate audio tracks* and press **REC** on up to 5 inserts. Every recording then has track 1 = the full mix plus one track per REC insert (e.g. *Mic*, *Game*, *Discord*), named after the insert – so you can cut, mute or level your voice, the game and Discord separately in Premiere, DaVinci Resolve or CapCut. The tracks stay sample-exact with the picture. Your stream is not affected: platforms always get the mix. Replay clips keep the tracks too.
+- **Control FabStream with your Stream Deck and other control apps:** Elgato Stream Deck, Touch Portal, Streamer.bot, Loupedeck, Bitfocus Companion and other remote apps work without anything extra: switch scenes, go live, record, mute and set volumes, show and hide sources, studio mode and transition, replay buffer and *Save clip*. Switch it on in *Settings → Remote control*; it shows the password and what to enter in each app.
 - **Both formats from one button – or each on its own:** *Stream* and *Record* on the Stream Deck use every format you set up. The outputs **stream 16:9**, **stream 9:16**, **record 16:9** and **record 9:16** start and stop one format alone. *Trigger hotkey* runs every FabStream shortcut by name (e.g. `FabStream.markMoment`).
 - **Phone remote:** with *Allow phones and tablets in my network* on, open the address shown in the settings on your phone (same Wi-Fi), enter the password and you get the live picture (16:9 or 9:16), *Go live* / *Record* with the running time, separate buttons for each format, scenes, the mixer with mute and volume, *Mark moment*, *Save clip*, the replay buffer and studio mode. Nothing to install.
 
 ### Improved
 - **Coming soon – Cloud Relay:** the pricing on the website announces it: your PC sends each format only once and our server forwards it to all your platforms, so 3 + 3 destinations need about 12 Mbit/s upload instead of 36. It will be included in Max and available as an add-on for Premium and Ultra; streaming directly from your PC stays the default. Nothing to buy yet.
-- **Two new guides on the website:** *How to stream to TikTok and Twitch at the same time* (step by step, from the stream keys to the TikTok safe zones) and *Vertical streaming: OBS Studio vs. FabStream* – in English, German and Italian, linked in the footer of every page.
+- **Two new guides on the website:** *How to stream to TikTok and Twitch at the same time* (step by step, from the stream keys to the TikTok safe zones) and *Vertical streaming: FabStream vs. other streaming platforms* – in English, German and Italian, linked in the footer of every page.
 - **Easier to find on Google:** the website's home page title and description now say what FabStream is – free streaming software that streams 16:9 and 9:16 at once.
 - **Safe by design:** the remote control is off until you switch it on, always needs the password (stored encrypted on your PC; *New password* signs every connected app out), only accepts apps on this PC unless you allow your home network, never accepts connections from the internet, and pauses an address for a minute after 5 wrong passwords.
 
@@ -59,7 +78,7 @@ Format: Added / Improved / Fixed / Known issues.
 - The plugin slots use FabStream's built-in effects; external VST plugins can't be loaded yet.
 - Separate tracks work in MP4 and MKV recordings (FLV holds one audio track). Sound from video files in your scenes is part of the mix only. Clips cut in the Auto-Cutter and in the recordings library keep the mix.
 - *Solo* on an insert also changes what your stream hears – it's meant for checking a source quickly.
-- OBS Studio uses the same port (4455). If OBS runs at the same time with its own WebSocket server on, choose another port in FabStream (e.g. 4456); FabStream tells you when the port is taken.
+- Another streaming program may use the same port (4455). If it runs at the same time, choose another port in FabStream (*Remote control → Advanced*, e.g. 4456); FabStream tells you when the port is taken.
 - Remote apps can switch and control things but can't yet create or rename scenes and sources, change filters or pause a recording. Pictures are available of the live scene (and the preview scene in studio mode), not of single sources.
 
 ## 3.8.0 – 2026-10-09
@@ -137,7 +156,7 @@ Format: Added / Improved / Fixed / Known issues.
 
 ### Fixed
 - **Game Capture finds your game when you switch to it:** *Capture any game automatically* used to know games only by a list of titles, so many games were never picked up – also after Alt+Tab. It now looks at the program behind each window: games from Steam, Epic, Riot, Xbox, GOG, Ubisoft, EA and Rockstar folders, Unity / Unreal / GameMaker / Godot games and any fullscreen program you switch to are recognised, and the game you Alt+Tab to wins. When you look at something else (browser, Discord …), the capture stays on your game.
-- **Never browsers, FabStream or other apps:** browsers (also in fullscreen), FabStream itself, launchers (Steam, Epic, Battle.net, Riot Client …), Discord, OBS, video players, editors and Windows windows are never taken as a game. The game picker marks the detected games and lists them first.
+- **Never browsers, FabStream or other apps:** browsers (also in fullscreen), FabStream itself, launchers (Steam, Epic, Battle.net, Riot Client …), Discord, other streaming programs, video players, editors and Windows windows are never taken as a game. The game picker marks the detected games and lists them first.
 
 ### Known issues
 - A game in exclusive fullscreen can still show black – switch it to borderless / windowed fullscreen. A game that is neither in a known folder nor fullscreen is found when you pick it in *Choose game…*.
@@ -239,7 +258,7 @@ Format: Added / Improved / Fixed / Known issues.
 ## 3.0.0 – 2026-10-07
 
 ### Changed
-- **New prices:** Premium $7.99 / 7,99 € a month (59 a year), Ultra $14.99 / 14,99 € (109 a year), Max $24.99 / 24,99 € (179 a year) – still below Streamlabs Ultra, with 16:9 and 9:16 at the same time in every plan. Yearly billing saves up to 40%. Subscriptions you already have keep their price.
+- **New prices:** Premium $7.99 / 7,99 € a month (59 a year), Ultra $14.99 / 14,99 € (109 a year), Max $24.99 / 24,99 € (179 a year) – with 16:9 and 9:16 at the same time in every plan. Yearly billing saves up to 40%. Subscriptions you already have keep their price.
 
 ### Added
 - **FabBot – the chat bot is built in:** a new *Bot* tab on the right. **Chat polls** (viewers vote with 1, 2, 3 … or the answer) and **giveaways** (viewers enter with !join, FabStream draws a winner with a rolling animation and never picks the same viewer twice) – both with new on-stream widgets *Chat poll* and *Giveaway*. **Commands** like !discord or !uptime with your own answers, cooldowns and *mods only*; **timed messages** that only post while you are live and the chat is active; **mod tools** that keep links, CAPS, spam and blocked words out of the chat box on stream (you, your mods and VIPs are never hidden). FabBot writes in your Twitch and Kick chat as you – connect Twitch / Kick once more to allow chat messages. !fabstream answers with your invite link.
@@ -249,7 +268,7 @@ Format: Added / Improved / Fixed / Known issues.
 - **Your account on the website:** fabstream.fabcomstudios.com/account.html now has a real sign-in (e-mail code, Twitch, Kick, TikTok, Discord or Google – the same account as in the app) and a dashboard: your plan, every license with its PCs (remove one with a click), invoices & cancellation, adding a license key, *Invite & earn* with your link and progress, your profile, linked sign-ins, where you are signed in, and deleting the account. Looking up a license key without an account still works.
 - **Invite & earn on the website:** a new page explains the program (*Earn free* in the menu), the pricing section shows it, and visitors who come through a link see that a friend invited them; their purchase counts for that friend for 30 days.
 - **Release notes on the website:** fabstream.fabcomstudios.com/changelog.html lists every version as a timeline with filters (*New / Improved / Fixed*), in the menu as *What's new*.
-- **Auto-configuration for both formats:** *Settings → Video → Auto-configure…* (also offered at the end of the first setup) checks your graphics card, CPU and real upload speed and sets resolution, frame rate, bitrate and encoder for 16:9 **and** 9:16 together – it knows how many platforms each format streams to, so multistreaming never eats more than about ¾ of your upload. You see the recommendation next to your current settings before anything changes. Like OBS's wizard, but for two formats at once. The upload test sends a few MB of random data to the FabStream server; if it can't run, FabStream plans with 10 Mbit/s and tells you.
+- **Auto-configuration for both formats:** *Settings → Video → Auto-configure…* (also offered at the end of the first setup) checks your graphics card, CPU and real upload speed and sets resolution, frame rate, bitrate and encoder for 16:9 **and** 9:16 together – it knows how many platforms each format streams to, so multistreaming never eats more than about ¾ of your upload. You see the recommendation next to your current settings before anything changes. The upload test sends a few MB of random data to the FabStream server; if it can't run, FabStream plans with 10 Mbit/s and tells you.
 
 ### Improved
 - **A real installer:** FabStream-Setup.exe is now a proper setup wizard in FabStream's look – welcome page, license, install folder, choice of desktop and Start-menu shortcuts, progress bar and a finish page that starts FabStream and links to what's new. It speaks English, German or Italian (like your Windows), shows *Fabcom Studios* as publisher with version details, still needs no administrator rights and replaces an installed version safely. In-app updates show just a short progress window and restart FabStream. The uninstaller (*Settings → Apps*) asks whether to keep your scenes, settings and license – recordings and clips are never deleted.
@@ -284,7 +303,7 @@ Format: Added / Improved / Fixed / Known issues.
 - **Goal bar** counts subs (gifted subs included), gifted subs, bits, donations or follows automatically while FabStream runs – also while its scene is not on screen; the current value can be edited or reset. Test alerts are never counted.
 - **Chat box on stream** in one click from the Chat tab (16:9, 9:16 or both): messages wrap, can fade out after a few seconds, and subs / gifts / raids / bits / donations can be shown in the chat.
 
-- **Twitch follow alerts straight from Twitch – no Streamlabs needed:** when Twitch is connected in your FabStream account, new followers appear in Activity, in the alert box, goal bars and labels. Already connected Twitch before? *Widgets → Twitch follows → Connect again* (or Settings → Account) once to allow it. A follow that Streamlabs/StreamElements also reports is shown only once.
+- **Twitch follow alerts straight from Twitch:** when Twitch is connected in your FabStream account, new followers appear in Activity, in the alert box, goal bars and labels. Already connected Twitch before? *Widgets → Twitch follows → Connect again* (or Settings → Account) once to allow it. A follow that Streamlabs/StreamElements also reports is shown only once.
 - **Emotes as pictures:** Twitch and Kick emotes show as pictures in the Chat tab and in the chat box on stream.
 - **Own sound and picture per alert type:** e.g. a coin sound for donations and a confetti GIF for gifted subs (*alert box → Own sound / picture per alert type*); empty types use the general sound and picture.
 - **Activity and labels survive a restart:** the last follows, subs, gifts, raids, bits and donations – and “Latest donation” / “Top cheer” – are still there after you restart FabStream.
