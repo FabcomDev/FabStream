@@ -3,6 +3,26 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.0.0 – 2026-10-09
+
+### Added
+- **Game events for the Auto-Cutter – BeamNG.drive:** switch it on in *Settings → Games* and turn on *OutGauge* and *MotionSim* in BeamNG (*Options → Other*, IP 127.0.0.1, the port FabStream shows). While you record, FabStream notes **crashes (with the speed), rollovers, big jumps and top-speed runs**, and the Auto-Cutter turns them into highlights such as *Crash at 94 km/h* – even when you stayed quiet. The settings show live whether BeamNG is sending data. *What counts* has a new *Game events* switch.
+- **Mute and solo every audio track in the Auto-Cutter:** each track (A1 Mix, A2 Mic, A3 Game …) has **M** and **S** like in a video editor. Mute Discord, solo your voice – the preview plays exactly that, the transport shows what the clips will sound like, and every clip is cut with that sound (one track is copied as it is, several are mixed).
+- **YouTube Shorts with every important setting:** visibility, **scheduled publishing** (the first clip at a time you choose, then one every 1–48 hours), category, audience (made for kids or not), video language, *Notify subscribers*, the *Altered or synthetic content* label, license, embedding and **adding the Short to one of your playlists**. FabStream remembers your choice; replay clips you upload from the Studio use it too. A clip that would not become a Short (no 9:16 file, longer than 3 minutes) says so before you upload.
+- **Resize the Mixer and Auto-Cutter like the Studio:** drag the edge of the insert panel, the recordings list, the previews and the clip details. Arrow keys move an edge, a double-click resets it; FabStream remembers the sizes.
+- **Website: new language menu** with flags – English, Deutsch, Italiano – on every page.
+
+### Improved
+- **Website search results:** the sign-in page no longer shows up in Google, and the descriptions of the license and Italian download pages fit fully into the search results.
+
+### Fixed
+- Two Auto-Cutter cuts in the same second could give their clips the same file name; a new clip now never replaces an existing one.
+
+### Known issues
+- VALORANT kills are not detected yet: Riot offers no live event interface, so FabStream will read them from the recording's picture – this needs tuning with real recordings first.
+- Tracks muted in the Auto-Cutter only work with recordings that have separate audio tracks (*Settings → Recording*); for older recordings the lanes show the levels only.
+- Muting or soloing a track replaces the mix with the separate tracks that are on – sound without a track of its own (an insert without REC) is then left out.
+
 ## 3.10.0 – 2026-10-09
 
 ### Added
