@@ -3,6 +3,35 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.2.0 – 2026-10-09
+
+### Added
+- **Moderator Studio** – a new tab at the top: moderate your own Twitch channel or any channel that made you a moderator, straight from FabStream. Pick the channel (live ones first), see the stream (title, game, viewers, uptime) and the live chat. Delete a message, time out or ban with one click on the line; click a name for the user card (messages this session, account age, timeouts from 1 minute to 7 days, warn with a reason, ban, unban). Switch slow mode, followers-only, subscribers-only, emote-only and unique chat, turn on **shield mode** during a hate raid, clear the chat, send **announcements** – and type Twitch's slash commands (*/timeout name 10m*, */ban*, */unban*, */warn*, */slow*, */followers*, */clear*, */announce* …). The log shows what you and the other moderators did. Connect Twitch once more (*Settings → Accounts*) so FabStream gets the moderation permissions. Part of **Ultra and Max** (and the 7-day trial).
+- **Phone remote with more pages:** swipe left and right (or tap the tabs): **Chat** – read every platform's chat and write to Twitch / Kick; **Bot** – switch FabBot on and off, post a command's answer, send a timed message, say something as FabBot, run **polls** and **giveaways**; **More** – show or hide each source separately in 16:9 and 9:16, every hotkey action as a button, CPU / frame rate / dropped frames. The remote now has its own icon – also when you add it to your phone's home screen.
+- **Ultra short clips (5–10 s)** in the Auto-Cutter (*Clip length*) – for Shorts and TikTok hooks.
+- **Legend under the Auto-Cutter timeline:** what every mark means (game event, your voice, loud sound, chat, follow / sub / raid, your marker, big change on screen) with how often it occurs.
+- **Drag & drop you can see:** when you drag a scene or a source, it moves into place while you drag, the others slide aside, and a short glow shows where it landed. Scenes can now be dragged too.
+- **Recording names say what they are:** date, time, resolution and frame rate, e.g. *FabStream_landscape_2026-10-09_16-16-05_1920x1080_60fps.mp4*. The Auto-Cutter shows them as *FabStream · 09.10.2026, 16:16 · 1920×1080 · 60 fps* – older recordings get resolution and frame rate read from the file.
+- **Games:** the ten most played games are prepared next to BeamNG.drive and VALORANT (Counter-Strike 2, League of Legends, Dota 2, Fortnite, GTA V, Minecraft, ARC Raiders, Overwatch 2, World of Warcraft, AION 2) – shown as *Coming soon* with what FabStream will find in each.
+
+### Improved
+- **Plans are checked by the FabStream server too:** the Moderator Studio and sharing clips only work when the server can see Ultra or Max – on your account, or on this PC (also for plans bought with a license key that is not linked to your account). If the server says no, FabStream shows the plans.
+- **Plans:** platforms per format **Free 1 · Premium 2 · Ultra 4 · Max 8**; resolution and frame rate **Free 1080p 60 fps · Premium 1080p 120 fps · Ultra 1440p 240 fps · Max 4K 240 fps**; PCs per license **Premium 1 · Ultra 3 · Max unlimited**. The **Mixer** (with separate audio tracks), **remote control** (Stream Deck, Touch Portal, phone) and the **Auto-Cutter** are part of Premium and up, the **Moderator Studio** of Ultra and up – without them they show what they do and lead to the plans. Existing subscriptions get the limits of the new plans. Free needs no account. Settings from a bigger plan are brought back into yours (e.g. Premium at 1440p goes to 1080p).
+- **7-day trial with a free account:** *Try it free for 7 days* asks you to create a FabStream account (or sign in) – no credit card. There is one trial per account (also across linked sign-ins, e-mail addresses and PCs); when it ends, FabStream asks you to choose a plan and otherwise continues as Free. Trials started before 4.2 run out as they were.
+- **Assistant measures more exactly and says where:** every test runs at least 5 seconds; download and upload use two connections and leave out the warm-up. Ping is measured as real network round trips (no server time in it) to the FabStream server **and every streaming server you switched on** (Twitch, YouTube, Kick …) – *Where it was measured* shows each server with address, location, ping, jitter, loss and number of samples. The Ping tile shows the slowest streaming server.
+- **Website:** plans, prices table, FAQ and terms show the new plans and the trial; a new *Moderator Studio* section.
+- **Security: FabStream only runs as delivered.** The app's program files are now one sealed package whose fingerprint is stored in *FabStream.exe* – if anything changes them on your PC (malware, a broken copy), FabStream refuses to start instead of running altered code. Reinstalling fixes it.
+- **Security: you are told when your sign-in e-mail changes.** If FabStream support changes the e-mail address of your account (e.g. on your request), the old address gets a notice – so a change you did not ask for never goes unnoticed.
+- **Fair trial – one per streamer:** the 7-day trial now needs your **Twitch account or YouTube channel, at least 30 days old** (connect it right from the trial button – *Connect Twitch* / *Connect YouTube*), and every channel gets one trial. It is started in the app only, and *name+anything@…* or Gmail addresses with extra dots count as the same address. Kick alone cannot be used for the trial – Kick does not share how old an account is.
+- **Website:** the public status check no longer shows which services are set up (that is in the admin tool now).
+
+### Fixed
+- **BeamNG.drive: a hard landing after a big jump is no crash any more.** Crashes now look at the *forward* speed and a *sideways or frontal* knock only – landing stops the fall but the car rolls on, so it is a *Big jump*. A landing that ends nose-first in the ground or a wall still is a crash.
+
+### Known issues
+- The Moderator Studio moderates Twitch channels; Kick follows later. The stream itself opens on Twitch (*Watch on Twitch*) – inside FabStream you see the live picture, refreshed every minute.
+- The other games in *Settings → Games* are prepared, not usable yet.
+
 ## 4.1.0 – 2026-10-09
 
 ### Added
