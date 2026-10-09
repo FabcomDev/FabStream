@@ -3,6 +3,28 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 3.9.0 – 2026-10-09
+
+### Added
+- **Mixer tab – like FL Studio, only simpler:** a new tab between *Studio* and *Auto-Cutter* with a **master and 16 inserts**. Send each audio source to an insert (*One insert per source* does it in one click), and every insert gets **10 plugin slots** with the built-in effects (EQ, compressor, noise gate, limiter, de-esser, expander, warmth, game EQ, stereo width, delay …), a **fader, pan, mute and solo**, plus live meters. The master has its own slots too – e.g. a limiter on everything your viewers hear.
+- **Separate audio tracks in recordings (like OBS' 6 tracks):** switch on *Settings → Recording → Separate audio tracks* and press **REC** on up to 5 inserts. Every recording then has track 1 = the full mix plus one track per REC insert (e.g. *Mic*, *Game*, *Discord*), named after the insert – so you can cut, mute or level your voice, the game and Discord separately in Premiere, DaVinci Resolve or CapCut. The tracks stay sample-exact with the picture. Your stream is not affected: platforms always get the mix. Replay clips keep the tracks too.
+- **Control FabStream with your Stream Deck – and everything else built for OBS:** FabStream now speaks the same remote language as OBS Studio (obs-websocket 5). The Elgato Stream Deck *OBS Studio* plugin, Touch Portal, Streamer.bot, Loupedeck, Bitfocus Companion and other OBS remotes work without anything extra: switch scenes, go live, record, mute and set volumes, show and hide sources, studio mode and transition, replay buffer and *Save clip*. Switch it on in *Settings → Remote control*; it shows the password and what to enter in each app.
+- **Both formats from one button – or each on its own:** *Stream* and *Record* on the Stream Deck use every format you set up. The outputs **stream 16:9**, **stream 9:16**, **record 16:9** and **record 9:16** start and stop one format alone. *Trigger hotkey* runs every FabStream shortcut by name (e.g. `FabStream.markMoment`).
+- **Phone remote:** with *Allow phones and tablets in my network* on, open the address shown in the settings on your phone (same Wi-Fi), enter the password and you get the live picture (16:9 or 9:16), *Go live* / *Record* with the running time, separate buttons for each format, scenes, the mixer with mute and volume, *Mark moment*, *Save clip*, the replay buffer and studio mode. Nothing to install.
+
+### Improved
+- **Coming soon – Cloud Relay:** the pricing on the website announces it: your PC sends each format only once and our server forwards it to all your platforms, so 3 + 3 destinations need about 12 Mbit/s upload instead of 36. It will be included in Max and available as an add-on for Premium and Ultra; streaming directly from your PC stays the default. Nothing to buy yet.
+- **Two new guides on the website:** *How to stream to TikTok and Twitch at the same time* (step by step, from the stream keys to the TikTok safe zones) and *Vertical streaming: OBS Studio vs. FabStream* – in English, German and Italian, linked in the footer of every page.
+- **Easier to find on Google:** the website's home page title and description now say what FabStream is – free streaming software that streams 16:9 and 9:16 at once.
+- **Safe by design:** the remote control is off until you switch it on, always needs the password (stored encrypted on your PC; *New password* signs every connected app out), only accepts apps on this PC unless you allow your home network, never accepts connections from the internet, and pauses an address for a minute after 5 wrong passwords.
+
+### Known issues
+- The plugin slots use FabStream's built-in effects; external VST plugins can't be loaded yet.
+- Separate tracks work in MP4 and MKV recordings (FLV holds one audio track). Sound from video files in your scenes is part of the mix only. Clips cut in the Auto-Cutter and in the recordings library keep the mix.
+- *Solo* on an insert also changes what your stream hears – it's meant for checking a source quickly.
+- OBS Studio uses the same port (4455). If OBS runs at the same time with its own WebSocket server on, choose another port in FabStream (e.g. 4456); FabStream tells you when the port is taken.
+- Remote apps can switch and control things but can't yet create or rename scenes and sources, change filters or pause a recording. Pictures are available of the live scene (and the preview scene in studio mode), not of single sources.
+
 ## 3.8.0 – 2026-10-09
 
 ### Added
