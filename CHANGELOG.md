@@ -3,6 +3,11 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.5.0 – 2026-10-10
+
+### Added
+- **See your viewers and who just came in – on every platform, in the app and on your phone.** The chat panel shows the viewers of Twitch, Kick, TikTok LIVE and now also **your YouTube live stream** (with YouTube connected), plus the total. New **“New” strip** under it: everyone who came in, newest first – people who **joined your Twitch chat or your TikTok LIVE**, and on every platform anyone who **writes for the first time this stream**; click it for the whole list with their first message. In the chat, *→ name joined* lines (hide them with the people button) and **NEW** / **FIRST TIME** tags (Twitch: their very first message in your channel). The **status bar** always shows the total viewers and the latest arrival – also with the chat closed; click it to open the chat. The **phone remote** has the same bar on top of every page: viewers per platform, the latest arrival, tap for the list. Everyone counts once per stream; bots and the people already in chat when FabStream connects are left out. Kick and YouTube have no join events – there it is the first message.
+
 ## 4.4.0 – 2026-10-09
 
 ### Added
