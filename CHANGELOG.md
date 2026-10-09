@@ -3,6 +3,20 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.3.0 – 2026-10-09
+
+### Added
+- **Moderate Twitch and Kick at the same time** in the *Moderator Studio*: open a Twitch channel and a Kick channel (yours with *My channel*, or any channel you are a moderator of) – both chats run in one list, every line marked **T** or **K**. Delete, time out and ban from the line, open the user card (timeouts, ban, unban – warnings on Twitch), and write to both chats at once or choose *Twitch* / *Kick* next to the chat box; */timeout*, */ban* and */unban* work for Kick too. The stream card shows both streams. Kick allows timeouts up to 7 days; its chat modes and announcements have no API and stay on kick.com. **Connect Kick once more** (*Settings → Accounts*) so FabStream gets Kick's moderation permissions. Part of Ultra and Max.
+- **Sign in on the phone with a QR code:** *Settings → Remote control → Phone or tablet* → *Show QR code*, scan it with the phone's camera – the remote opens and signs in by itself and remembers it. The code holds the password, so it stays hidden until you ask for it and hides itself after 2 minutes; the password never leaves the phone over the network.
+- **Post clips straight to TikTok:** sharing a clip to TikTok (clip library or Auto-Cutter) now opens a *Post to TikTok* window: it shows the TikTok account the post goes to and a preview, you write or edit the caption (hashtags and @mentions work), choose **who can see it** (Everyone, Friends, Followers or Only me – nothing is preselected), allow **comments, Duet and Stitch** if you want (all start off; options you switched off in TikTok stay greyed out) and, if the clip promotes something, **disclose commercial content** (*Your brand* or *Branded content*, with TikTok's label). Press *Post* and FabStream uploads and publishes it – it may take a few minutes until it is visible on your profile. Prefer to finish in the TikTok app? *Send to drafts instead* works like before. In the Auto-Cutter every clip gets its own window.
+
+### Improved
+- **Layouts you can rearrange – Auto-Cutter and Moderator Studio:** drag an area by its grip (⠿) to another place and the others slide aside – e.g. the recordings list to the right, the timeline above the previews or the highlights list on top; in the Moderator Studio the three columns and every card (stream, chat modes, shield, announcement, user, log) can be moved, also into the other side column. All dividers resize, the layout is remembered, arrow keys on a grip move it too, and *Reset layout* (layers icon) brings the default back.
+
+### Known issues
+- **Connect TikTok once more** (Clips → Upload → TikTok) to allow posting – connections made before 4.3 can only send to drafts.
+- Until TikTok has approved FabStream for public posting, posts can only go to **private TikTok accounts** and are visible to you only. Sending to drafts is not affected.
+
 ## 4.2.0 – 2026-10-09
 
 ### Added
