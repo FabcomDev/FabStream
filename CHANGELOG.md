@@ -3,6 +3,23 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 3.10.0 – 2026-10-09
+
+### Added
+- **Auto-Cutter timeline like a real video editor:** below the previews the recording is now laid out in tracks – **V1 16:9** and **V2 9:16** as filmstrips with frames from your video, then **A1 Mix** and **one lane per separate audio track** (e.g. *A2 Mic*, *A3 Game*, *A4 Discord*), each with its own waveform and name on the left. You see at a glance whether you, the game or Discord was loud, and the highlight markers run across every track. Recordings without separate tracks show the mix; 3.8 recordings show the levels FabStream noted while recording.
+- **Right-click on a mixer channel:** rename, *Add plugin* straight into the next free slot, effects, mute, solo, REC, fader to 0 dB, pan to centre, route a source here, the source's filters, move to another insert or reset. The master has its own menu.
+
+### Improved
+- **The Mixer fills the whole window:** the channels share the full width instead of sitting on the left.
+- **Mixer and Studio stay in sync:** an insert with one source uses that source's volume and mute – move the fader in the Mixer tab and the Studio audio mixer follows, and the other way round.
+- **New sources get their own insert:** once you use the mixer, a newly added audio source goes onto the next free insert by itself.
+- **Engineering page moved to the FabStream website:** *How FabStream is built* (privacy, security, measurements) now lives on fabstream's own site; old links forward automatically.
+- **Website:** new sections with real screenshots of the **Mixer** and the **Auto-Cutter**, and fresh screenshots of the app everywhere else.
+- **Smaller download page:** the release only offers the installer – the portable ZIP is gone.
+
+### Known issues
+- Filmstrips of very long recordings use key frames only, so neighbouring frames can look alike.
+
 ## 3.9.0 – 2026-10-09
 
 ### Added
