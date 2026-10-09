@@ -3,6 +3,16 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.6.0 – 2026-10-10
+
+### Improved
+- **Much sharper recordings and replay clips:** recordings no longer share the stream's bitrate. With an NVIDIA, AMD or Intel encoder FabStream now encodes the same picture a second time in high quality just for recordings and the replay buffer (about 19 Mbit/s at 1080p60 instead of your 5–6 Mbit/s stream) – your stream keeps its bitrate. Choose *High* (default), *Maximum* or *Same as the stream* in *Settings → Recording → Quality*.
+- **Sharper stream at the same bitrate on NVIDIA:** adaptive quantization and look-ahead are switched on where the graphics card supports them – more detail in dark and fast game scenes, fewer blocks.
+- **Smoother motion:** *Settings → Video* warns when 50 or 25 fps are set – games and screens run at 60/120/144 Hz, so 50 fps skips every sixth frame or so and motion stutters (choose 60). The status bar turns amber with a ⚠ when the picture is not drawn evenly while you are live or recording, and says what helps (cap the game's frame rate, Windows "Hardware-accelerated GPU scheduling").
+
+### Fixed
+- The log no longer fills with one "speed=1x" warning per second while recording or streaming.
+
 ## 4.5.0 – 2026-10-10
 
 ### Added
