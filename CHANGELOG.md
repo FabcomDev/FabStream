@@ -3,6 +3,20 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.7.0 – 2026-10-10
+
+### Added
+- **Connect your Riot account in one click:** *Settings → Games → VALORANT → Connect Riot account* now takes the account that is signed in to the Riot Client on your PC – no browser, no password, no waiting for Riot. The card shows your Riot ID and warns when another account is signed in to the Riot Client (*Update* switches to it). Kills, aces and clutches after each match still need Riot's approval of FabStream for its match data; won rounds and match results work live.
+- **"Open" next to "Copy":** every link you can copy now also opens with one click – the phone remote address (shows FabStream Remote in your browser), the remote address for Stream Deck & co., and your invite link.
+
+### Improved
+- **Nicer buttons in the settings pages:** gold main buttons, value fields with attached *Show · Copy · Open* buttons, and a proper "locked" tile for the phone sign-in QR code (it was squashed in the settings window).
+
+### Fixed
+- **Game and window capture back at your frame rate:** 4.6.1 captured games at twice the frame rate. On a gaming PC with an uncapped game that made it worse (about one doubled frame in four instead of one in seven), so capture runs at your stream's frame rate again.
+- **See when the game itself stutters:** while you are live or recording, the status bar shows *capture xx* and turns amber when a captured game, window or screen delivers clearly fewer new pictures than your stream needs. The tooltip says what helps: cap the game's frame rate, play in borderless/windowed fullscreen, turn on "Hardware-accelerated GPU scheduling", or capture the display instead of the window.
+- The log no longer repeats "YouTube viewer count failed" every minute when your YouTube account cannot go live yet: it is written once, and FabStream asks YouTube again every 10 minutes.
+
 ## 4.6.1 – 2026-10-10
 
 ### Fixed
