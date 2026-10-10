@@ -3,6 +3,18 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.9.0 – 2026-10-10
+
+### Added
+- **Edit every track on its own in the Auto-Cutter:** cut a single track with the new **cut tool** (*C*, or the *Cut tool* button – Shift + click cuts every track) or at the playhead (*K*), then mute just that part of your mic, Discord or game sound (*M*, or right-click it) and set each track's volume (0–200 %). Cut a part of the picture out of the clips (*X*) – it's removed from every track so picture and sound stay in sync. Clips with edits show a ✂ and their length after cutting; the preview plays what the clip will sound like and skips the parts you cut out. Edits are kept per recording while FabStream runs. Limit: clips with a part cut out are re-encoded, so cutting them takes longer than before.
+- **Right-click everywhere in the Auto-Cutter:** tracks (split, mute or cut out a part, remove a cut, volume, mute / solo, reset), track names, clips on the timeline and in the list (play, loop, start / end at the playhead, formats, remove), the previews and the ruler (add a highlight, zoom, undo / redo).
+- **Editor settings and undo:** right-click the timeline → *Settings*: follow the playhead while playing, snap to cuts, clips and the playhead, show the signs under the timeline (remembered). **Ctrl + Z / Ctrl + Y** undo and redo highlight changes and track edits.
+
+### Improved
+- **Upgrade or downgrade anytime – one license per account:** *Account → Licenses → Change plan* opens the plan switch (Premium, Ultra, Max, monthly or yearly). Upgrades start right away and you only pay the difference for the rest of your period; downgrades and switching from yearly to monthly take effect when the paid period ends. If you already have a subscription, the buy buttons on the website and in the app take you to this plan switch instead of starting a second subscription.
+- **Buying now goes through your FabStream account:** sign in (or create your free account) first, then pay – your license is linked to your account right away and shows up on every PC you sign in to.
+- **A calmer, clearer checkout page:** your order on top – plan, price per month or year, what's included, "incl. VAT" and the total – and the payment form in full width below, so on a computer it shows the price breakdown and the payment fields side by side instead of one long column. Switch between monthly and yearly or another plan right there (the yearly saving is shown), the header only keeps the logo and the language, and on phones the payment form comes right after the order.
+
 ## 4.8.1 – 2026-10-10
 
 ### Improved
