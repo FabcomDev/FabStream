@@ -3,6 +3,11 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.6.1 – 2026-10-10
+
+### Fixed
+- **Fewer doubled frames in game and screen capture:** FabStream now captures games and screens at twice your output frame rate (120 for a 60 fps stream). Before, the capture and the output ran on two separate 60 Hz clocks, and about one frame in ten was shown twice in fast motion – visible as micro-stutter in streams and recordings. Older recordings keep the problem.
+
 ## 4.6.0 – 2026-10-10
 
 ### Improved
