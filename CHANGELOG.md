@@ -3,6 +3,17 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.10.0 – 2026-10-10
+
+### Added
+- **Right-click and Delete in the Auto-Cutter library:** right-click a recording to open it in the editor, play it, show it in its folder or delete it; right-click a clip for details, share, play, show in folder, select or delete – with several clips selected, share or delete them all at once. The **Delete** key works on the selected recording or clip (with a confirmation; files go to the recycle bin), Space selects a clip, Ctrl + A selects all.
+- **M and S on every track of the Auto-Cutter:** a source the recording only has in its mixed sound (e.g. Discord or VALORANT in a recording without separate tracks) can't be muted afterwards – its M / S buttons now tell you so and switch on separate tracks with one click, so from the next recording on every source gets a track of its own and M / S work on it.
+
+### Improved
+- **Your plan updates right away:** FabStream checks your account and plan whenever you come back to the window and every 5 minutes – an upgrade, a plan from a gift, a cancellation that ended or a refund shows up within minutes instead of up to 12 hours later. When your account has several plans, the highest one always wins on your PC (also over a license key with a lower plan).
+- **One card for your phone and its apps:** *Settings → Remote control* now has *Phone, tablet & apps* – FabStream Remote in the browser, Touch Portal and Streamer.bot on one page with the same values to copy; the overview shows four cards in two even rows.
+- **Checkout: just the payment form, no scrolling:** the checkout page now shows only Stripe's payment form as one clean white card – plan, price, VAT and total on the left, your payment details and the pay button on the right, visible without scrolling on a laptop. The page's top bar keeps what matters while you pay: *Secure checkout · Unlocked right away · Cancel anytime*, and *Change plan* takes you back to the plans.
+
 ## 4.9.0 – 2026-10-10
 
 ### Added
