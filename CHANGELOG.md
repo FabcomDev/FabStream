@@ -3,6 +3,16 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.12.0 – 2026-10-10
+
+### Added
+- **Routing cables in the Mixer:** select an insert and route it to the master and to other inserts like in FL Studio – click the arrow under a channel to connect, a green cable shows where the sound goes and a knob on the target sets how much (0–100 %; drag or scroll, double-click = 100 %). Right-click a knob or a channel for *Route only here*, *Route to …* and *Remove this cable*. Loops are not possible – a channel that already feeds the selected one can't be routed back.
+
+### Fixed
+- **Game Capture took the Riot Client instead of VALORANT:** launchers (Riot Client, Rockstar, Minecraft and other launchers) are never captured as the game any more, so the game's own audio channel is the game too. If FabStream already added a *Riot Client* channel, remove it in the audio mixer (right-click → Remove).
+- **The game's own audio channel now appears:** in 4.11.0 the Game Capture could pick the Riot Client launcher, so no channel for the game itself was added – with the fix above the game's channel (e.g. *VALORANT*) appears as soon as the Game Capture finds the game.
+- **Desktop Audio never goes silent:** if Windows can't tell which programs play sound, Desktop Audio falls back to leaving out one program instead of recording nothing.
+
 ## 4.11.0 – 2026-10-10
 
 ### Added
