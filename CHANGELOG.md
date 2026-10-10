@@ -3,6 +3,16 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.8.0 – 2026-10-10
+
+### Added
+- **Invite & earn now pays out directly:** your 20 % commission is paid by FabStream once a month – to your PayPal account or by bank transfer (IBAN). Enter where it should go on the website under *Account → Invite & earn*; the app shows it in *Invite & earn → Payout* together with your next payout, what is still in the 30-day refund period and what was already paid. No affiliate program to join any more.
+
+### Improved
+- **New checkout with Stripe:** subscriptions are now bought through Stripe – cards, Apple Pay, Google Pay and more. Existing subscriptions keep running as before.
+- The commission is 20 % of what a subscription pays without VAT; amounts under 20 are carried over to the next month.
+- The terms now contain the full EU withdrawal notice and a model withdrawal form.
+
 ## 4.7.0 – 2026-10-10
 
 ### Added
