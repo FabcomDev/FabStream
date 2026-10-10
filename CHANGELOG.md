@@ -3,6 +3,21 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.8.1 – 2026-10-10
+
+### Improved
+- **Pay right on fabstream.fabcomstudios.com:** the payment form now opens on our own checkout page instead of a separate Stripe page – in FabStream's dark look with the gold button, next to an always-visible order summary: your plan, the price in the currency you pay in, VAT and the total due today (Stripe folds its own breakdown away on smaller screens – ours stays open).
+- **Save your card for next time:** the payment form offers to remember your card, and businesses can add their VAT ID. Cards, Apple Pay, Google Pay and more work as before.
+
+### Improved (app)
+- **Smoother stream while you arrange your scene:** moving or resizing a source in the preview no longer rebuilds the scene list, the bot cards and the audio list on every mouse move, and the whole drag is saved as one undo step at the end. In our measurement with a large project (20 scenes, 300 items, a 2000-track playlist) the work per mouse move dropped from about 8 ms to under 2 ms, and doubled frames while dragging fell from 40 % to 11 %.
+- **Animated browser sources don't take the studio's time any more:** the pages of browser sources (alert boxes, overlays) are converted to pixels in a separate background thread and the conversion is about twice as fast. A full-screen animated 1080p page used to take half of the time FabStream needs to draw your stream, which showed up as stutter – now it takes about 1 %.
+- **Lighter autosave:** saving the project no longer reads the previous file again just to back it up.
+
+### Fixed
+- **Stream widgets with a video filter in both formats:** a widget (goal bar, alert box, chat …) with a filter was drawn into the 9:16 picture from its 16:9 version – squeezed and the wrong size. Each format now gets its own picture again.
+- **No "What's new" on a fresh installation:** new users saw the release notes of every version right after skipping the setup assistant; now they only get the short app tour.
+
 ## 4.8.0 – 2026-10-10
 
 ### Added
