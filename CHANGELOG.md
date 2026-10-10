@@ -3,6 +3,18 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.11.0 – 2026-10-10
+
+### Added
+- **A game gets its own audio channel by itself:** when a Game Capture finds your game, the game's sound appears in the audio mixer as its own channel (e.g. *VALORANT*) – with its own fader, mute and filters, and as its own track in recordings with separate tracks.
+
+### Improved
+- **A sound with its own channel is never in Desktop Audio as well:** Desktop Audio now leaves out every program that has its own channel in the mixer (Discord, the game, …) – not just one. Before, a game with its own channel was also part of Desktop Audio and was recorded twice, a little apart, which sounded like lag or an echo. The Desktop Audio channel shows which programs it leaves out. With *Settings → Audio → Desktop audio capture → Default playback device* this isn't possible; there the mixer marks a program that is heard twice and fixes it with one click. Windows system sounds are not part of Desktop Audio while several programs are left out.
+- **Pricing has its own page:** plans and prices moved from the home page to *Pricing* (fabstream.fabcomstudios.com/en/pricing.html) – old links to the home page's pricing section open it. In the menu, *Earn* is now called **Affiliate**.
+
+### Fixed
+- **Plan after a license key stopped working:** when the key on your PC no longer exists (e.g. a cancelled test purchase), the plan of your account takes over in the same check – before, FabStream showed *Free* for a minute although the account had a higher plan.
+
 ## 4.10.0 – 2026-10-10
 
 ### Added
