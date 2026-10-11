@@ -3,6 +3,18 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.12.1 – 2026-10-11
+
+### Improved
+- **The game sound channel belongs to its Game Capture:** the audio channel a Game Capture adds for its game now has the same name as the source (e.g. *Game Capture*), is renamed with it and is removed when you delete the source – add the source again and the channel comes back. An existing channel FabStream made for the game earlier (e.g. *VALORANT*) is taken over and renamed the next time the Game Capture finds the game.
+- **Higher graphics card priority while live (like OBS):** while you record or stream, Windows no longer puts FabStream's drawing and the game capture behind the game on the graphics card – before, a game in front could make the capture miss frames even when the card had power left. Back to normal when you stop. No admin rights needed.
+- **Smoother streams while gaming:** while you record, stream or buffer, a format with nothing running (e.g. 9:16 while only 16:9 is live) is drawn only 15 times a second for its preview instead of 60 – that GPU time now goes to your game and the Game Capture.
+- **Less GPU load for recordings and the replay buffer:** the high-quality recording video no longer uses the NVIDIA encoder's extra picture analysis (it brings nothing visible at that bitrate) – only the stream video keeps it.
+- **A replay buffer or recording of a format without a stream destination needs one encode instead of two:** before, FabStream also made a stream video for that format that nobody used. If you add a stream destination for that format later, stop its recording/replay buffer once before going live in that format.
+
+### Fixed
+- **The *capture* value in the status bar and the log showed about 1 fps** while the game was captured fine – it now counts the frames the capture really delivers.
+
 ## 4.12.0 – 2026-10-10
 
 ### Added
