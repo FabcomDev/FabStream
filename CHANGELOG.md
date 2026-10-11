@@ -3,6 +3,12 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.12.2 – 2026-10-11
+
+### Improved
+- **VALORANT rounds land on the right moment in the Auto-Cutter:** the Riot Client updates your score only every minute or so (two won rounds often arrive at the same second), so a *Round won* highlight used to sit up to a few minutes away from the actual round. FabStream now treats the round time as rough: the Auto-Cutter puts *Round won* on the strongest moment of that round (your shout, a loud kill, a big change on screen) and leaves it out when there is none, instead of cutting a clip at the wrong spot. Recordings made before this update keep the old round times.
+- **Game Capture and Display Capture keep up with 60 fps on high-resolution screens while gaming:** the part of FabStream that copies every captured frame off the graphics card now also gets the higher graphics card priority while you are live. Before, it waited behind the game, and Windows/Chromium then slowed the capture down to ~35 fps on big screens (e.g. 3440×1440) – the recording looked choppy although FabStream itself drew 60 fps.
+
 ## 4.12.1 – 2026-10-11
 
 ### Improved
