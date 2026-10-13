@@ -3,6 +3,11 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.13.0 – 2026-10-13
+
+### Added
+- **Thank-you and tip e-mails for trials and subscriptions:** when you start the free 7-day trial you get a welcome e-mail with three things to try first. Want a reminder before the trial ends? Tick the new optional box under the trial button (*Email me a reminder before my trial ends and tips about FabStream*) – only then you get the reminder two days before the end and a short note after it. After buying a plan you get a thank-you with everything your plan includes and, a few days later, three tips that match your plan. Every e-mail with tips has an unsubscribe link, and mails about your account and license always arrive.
+
 ## 4.12.3 – 2026-10-13
 
 ### Fixed
