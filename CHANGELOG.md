@@ -3,6 +3,18 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.12.3 – 2026-10-13
+
+### Fixed
+- **Game and desktop sound no longer lags behind the picture:** sound captured from Windows (Desktop Audio, a game's own channel, Discord and other programs) used to reach the stream and the recording 100–380 ms after the picture – more while gaming, because its safety buffer grew and stayed large. That buffer now has a fixed size and follows the sound card's clock, so the delay never creeps up during a long stream, and FabStream takes exactly this delay out again when it encodes: game sound, your mic and the picture line up. Applies the next time you go live or record; older recordings keep the lag.
+- **Short pauses in a game's sound no longer count as dropouts:** when a program goes quiet, Windows sends nothing – FabStream recognises such a pause again and doesn't treat it as stutter.
+
+### Improved
+- **Less stutter in game sound while the PC is busy:** the small helper that picks up the sound from Windows now runs at high priority, so a game that keeps the processor busy can no longer make the sound arrive in clumps.
+
+### Known issues
+- If you moved the sound earlier under *Settings → Audio → Audio sync* because of this lag, set it back to 0 – otherwise the sound now comes too early.
+
 ## 4.12.2 – 2026-10-11
 
 ### Improved
