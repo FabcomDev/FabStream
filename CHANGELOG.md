@@ -3,6 +3,21 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.13.1 – 2026-10-17
+
+### Fixed
+- **Game, Discord and desktop sound no longer lag behind the picture – also in plain recordings:** FabStream's audio mixer ran on a software timer that falls behind whenever the PC is busy (measured down to 67 % of real time with a game running). Every sound captured from Windows then piled up and reached the recording and the stream up to ~200 ms late, and some of it was thrown away. The mixer now runs on the clock of your playback device, which never falls behind. On top, the remaining fixed delay was measured end to end and taken out: sound and picture now line up within about 10 ms (less than one frame), with no drift over long recordings. Applies the next time you record or go live; older recordings keep the lag.
+
+### Improved
+- **Smooth 60 fps from Display, Window and Game Capture – also on big screens and next to a game:** the picture is now captured on the graphics card and handed to FabStream without a copy through the processor. Before, the built-in capture copied every frame through the processor and slowed itself down to save it: on a 3440×1440 screen that was 32–46 frames per second while live, so streams and recordings stuttered although FabStream itself drew 60. Measured next to a running game with a second capture at the same time: 60 fps instead of 53. The yellow frame Windows can draw around a captured screen is switched off. If the new capture is not available on a PC (or for a window), FabStream uses the previous one automatically.
+
+### Added
+- **Five new step-by-step guides on the website** (English, German and Italian): streaming in 16:9 and 9:16 at the same time, a vertical live layout for TikTok, YouTube Shorts and Instagram, multistreaming with a table of how much upload you need, turning stream highlights into Shorts with the Auto-Cutter, and controlling your stream from your phone or a Stream Deck – all in a new *Guides* column at the bottom of every page.
+
+### Known issues
+- FabStream now shows up in the Windows volume mixer. It plays nothing there – leave it as it is; it only keeps the audio clock running.
+- If you moved the sound earlier under *Settings → Audio → Audio sync* because of the lag, set it back to 0 – otherwise the sound now comes too early.
+
 ## 4.13.0 – 2026-10-13
 
 ### Added
