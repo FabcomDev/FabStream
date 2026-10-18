@@ -20,6 +20,13 @@ after we last distribute this version (contact: see EULA).
 
 FFmpeg is a trademark of Fabrice Bellard, originator of the FFmpeg project.
 
+## FabStream helper programs (mingw-w64 runtime, LLVM libc++ / compiler-rt)
+`resources\native\fabstream-audio.exe` (sound capture) and `resources\native\fabstream-capture.exe` (GPU screen and
+window capture) are FabStream's own programs, built with llvm-mingw (https://github.com/mstorsjo/llvm-mingw). They are
+statically linked with the mingw-w64 runtime (Copyright (c) 2009, 2010 by the mingw-w64 project; Zope Public License
+2.1 and public domain parts, https://www.mingw-w64.org) and with LLVM libc++, libunwind and compiler-rt (Apache License
+2.0 with LLVM Exceptions, https://llvm.org/LICENSE.txt).
+
 ## H.264 / AAC patent notice
 H.264 encoding may be subject to patent licenses (e.g. Via LA) in some countries.
 Hardware encoders (NVENC/QSV/AMF) use the GPU vendor's driver-provided licenses.
