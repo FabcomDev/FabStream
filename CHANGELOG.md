@@ -3,6 +3,15 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.14.0 – 2026-10-28
+
+### Privacy
+- **One-time, anonymous installation count:** on the very first start after a new installation, FabStream tells our server once that it was installed – only the version and the install type (installer, portable, Microsoft Store). No installation ID, no computer name, nothing about how you use the app; updates of an existing installation send nothing. Details in the privacy policy.
+
+### Improved
+- **Own prices in Swiss francs:** in Switzerland and Liechtenstein the plans now cost CHF 7.90 (Premium), CHF 14.70 (Ultra) and CHF 24.90 (Max) a month, or CHF 58.90 / 106.90 / 178.90 a year – before, the euro amounts were simply charged in francs. The pricing page shows the CHF prices to visitors from there, and the checkout charges them. Subscriptions that are already running keep their current price.
+- **Easier first install:** the download page now shows, right next to the download button, the two clicks Windows asks for on the first start of a newly downloaded app – *More info* → *Run anyway* – as a picture with the real Windows labels in English, German and Italian. Windows asks only once; after that FabStream starts directly.
+
 ## 4.13.1 – 2026-10-17
 
 ### Fixed
