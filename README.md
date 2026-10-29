@@ -255,7 +255,7 @@ FabStream ist ein Streaming-Studio für Windows, das **16:9 und 9:16 gleichzeiti
 - **Kostenlos:** beide Formate gleichzeitig bis 1080p60, alle Funktionen oben, Aufnahme, 2 Minuten Replay-Puffer – **ohne Wasserzeichen, ohne Zeitlimit**.
 - **Premium (7,99 € / Monat · 59 € / Jahr):** 3 Plattformen pro Format, Auto-Cutter-Clips schneiden, bis 1440p und 120 fps, 5 Minuten Replay, 1 PC.
 - **Ultra (14,99 € / Monat · 109 € / Jahr):** 8 Plattformen pro Format, Clips direkt auf YouTube & TikTok teilen, bis 4K und 240 fps, 10 Minuten Replay, 3 PCs.
-- **Max (24,99 € / Monat · 179 € / Jahr):** alles aus Ultra, 30 Minuten Replay, 5 PCs, früher Zugang zu neuen Funktionen.
+- **Max (24,99 € / Monat · 179 € / Jahr):** alles aus Ultra, 30 Minuten Replay, unbegrenzt viele PCs, früher Zugang zu neuen Funktionen.
 - Alle Funktionen 7 Tage gratis testen, ohne Kreditkarte.
 - **Installation:** [`FabStream-Setup.exe` herunterladen](https://github.com/FabcomDev/FabStream/releases/latest/download/FabStream-Setup.exe) und starten. Zeigt Windows SmartScreen *„Der Computer wurde durch Windows geschützt"*: **Weitere Informationen → Trotzdem ausführen**.
 
