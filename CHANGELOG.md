@@ -3,6 +3,14 @@
 All notable changes to FabStream. Each release on GitHub shows the section of its version.
 Format: Added / Improved / Fixed / Known issues.
 
+## 4.14.1 – 2026-11-03
+
+### Privacy
+- **Clearer words instead of "no telemetry":** the website and the privacy policy now say exactly what FabStream sends: nothing about how you use the app – it only goes online for the license check of paid plans (about every 12 hours), the update check (can be switched off in *Settings → Advanced*) and the one-time, anonymous count of new installations. Nothing changed in the app; only the wording is more precise.
+
+### Improved
+- **Website of Fabcom Studios (the company behind FabStream):** FabStream is now shown there as a case study, the company website has a new *Guides* section, a LinkedIn link and an optional field for a preferred call time in the contact form, and every project gets a free, non-binding quote instead of a price list; *Website Checker* is now called *Website check*. The legal notice no longer mentions the EU online dispute platform, which was shut down in 2025.
+
 ## 4.14.0 – 2026-10-28
 
 ### Privacy
