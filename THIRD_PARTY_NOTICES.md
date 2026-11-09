@@ -30,3 +30,18 @@ statically linked with the mingw-w64 runtime (Copyright (c) 2009, 2010 by the mi
 ## H.264 / AAC patent notice
 H.264 encoding may be subject to patent licenses (e.g. Via LA) in some countries.
 Hardware encoders (NVENC/QSV/AMF) use the GPU vendor's driver-provided licenses.
+
+## Website: client portal (fabcomstudios.com/portal/) – browser libraries (MIT License)
+Served unmodified to signed-in portal users only (not part of the FabStream app):
+* `server/public/portal/qrcode.js` – qrcode-generator 2.0.4, Copyright (c) 2009 Kazuhiko Arase (https://github.com/kazuhikoarase/qrcode-generator).
+  "QR Code" is a registered trademark of DENSO WAVE INCORPORATED.
+* `server/public/portal/jspdf.js` – jsPDF 4.2.1, Copyright (c) 2010-2021 James Hall, yWorks GmbH and contributors
+  (https://github.com/parallax/jsPDF), bundled with fflate (Copyright (c) 2023 Arjun Barrett) and @babel/runtime
+  (Copyright (c) 2014-present Sebastian McKenzie and contributors). License texts are kept in the file's header comments.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
+persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and
+this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS
+PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
